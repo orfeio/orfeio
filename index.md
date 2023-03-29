@@ -1,6 +1,7 @@
 ---
 title: Home
 layout: home
+nav_order: 0
 ---
 
 Code, comments, and clips for [ORFE](https://orfe.princeton.edu) academics.
