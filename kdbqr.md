@@ -60,4 +60,4 @@ Now, each time you want to work with R and the `rkdb` package, activate the `kdb
 Now, each time you want to work with R and the `rkdb` package, activate the `kdbrtest` environment via the Anaconda Prompt app with the command `conda activate kdbrtest` and then type `jupyter notebook`.
 
 [^minic]: If you haven't installed Anaconda yet, go with Miniconda instead.
-[^tools]: Accept all the graphical defaults unless you know you have an existing Rtools installation.
+[^rtools]: Accept all the graphical defaults unless you know you have an existing Rtools installation.
