@@ -18,7 +18,7 @@ We will use the tool to build an environment that includes all the dependencies 
 
 ### macOS
 
-1. Make sure your OS is [completely up-to-date](https://support.apple.com/en-us/HT201541), then install the Apple Developer Command Line Tools are installed by running the following command in the Terminal app.
+1. Make sure your OS is [completely up-to-date](https://support.apple.com/en-us/HT201541), then install the Apple Developer Command Line Tools by running the following command in the Terminal app.
     ```
     xcode-select --install
     ```
