@@ -14,7 +14,7 @@ For software projects, it is good practice to use a tool to manage packages and 
 
 We will use the tool to build an environment that includes all the dependencies necessary to send queries in Q via R, all while working in a Jupyter notebook.
 
-## Steps
+## Setup
 
 ### macOS
 
