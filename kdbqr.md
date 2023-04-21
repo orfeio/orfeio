@@ -25,10 +25,15 @@ We will use the tool to build an environment that includes all the dependencies 
 
 2. Create a conda environment that includes [Jupyter](https://jupyter.org) and [R](https://www.r-project.org), as well as the R package `devtools`.  For this example, we will name our environment `kdbrtest`, but you may name it anything you wish.
     ```
-    conda create -y --name kdbrtest jupyter r-irkernel r-devtools
+    conda create -y --name kdbrtest jupyter r-irkernel r-devtools --channel conda-forge
     ```
 
-3. Install the `rkdb` package.  For installation, we use R and the `devtools` package to download and compile the code hosted in the `rkdb` repository.
+3. Load the environment you just created.
+   ```
+   conda activate kdbrtest
+   ```
+
+4. Install the `rkdb` package.  For installation, we use R and the `devtools` package to download and compile the code hosted in the `rkdb` repository.
     ```
     Rscript -e "devtools::install_github('kxsystems/rkdb')"
     ```
@@ -39,21 +44,26 @@ Now, each time you want to work with R and the `rkdb` package, activate the `kdb
 
 1. Open the Anaconda Prompt app and create a conda environment that includes [Jupyter](https://jupyter.org) and [R](https://www.r-project.org), as well as the R package `devtools`.  For this example, we will name our environment `kdbrtest`, but you may name it anything you wish.
     ```
-    conda create -y --name kdbrtest jupyter r-irkernel r-devtools r-installr
+    conda create -y --name kdbrtest jupyter r-irkernel r-devtools r-installr --channel conda-forge
     ```
 
-2. Open Jupyter to further prepare the environment.
+2. Load the environment you just created.
+   ```
+   conda activate kdbrtest
+   ```
+
+3. Open Jupyter to further prepare the environment.
     ```
     jupyter notebook
     ```
 
-3. Use the R package `installr` to help install [RTools](https://cran.r-project.org/bin/windows/Rtools/), which allows for building packages like `rkdb` from source.  You'll be prompted to complete the installation graphically after running these commands in a cell inside a new notebook.[^rtools]
+4. Use the R package `installr` to help install [RTools](https://cran.r-project.org/bin/windows/Rtools/), which allows for building packages like `rkdb` from source.  You'll be prompted to complete the installation graphically after running these commands in a cell inside a new notebook.[^rtools]
 	```
     library(installr)
 	install.Rtools(check=FALSE,check_r_update=FALSE,GUI=FALSE)
     ```
 
-4. Complete the installation of `rkdb` by calling devtools from another cell after the Rtools installation is complete.
+5. Complete the installation of `rkdb` by calling devtools from another cell after the Rtools installation is complete.
     ```
     devtools::install_github('kxsystems/rkdb')
     ```
