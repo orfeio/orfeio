@@ -10,5 +10,5 @@ Code, comments, and clips for [ORFE](https://orfe.princeton.edu) academics.
 
 **Comments** are interspersed, inline and throughout, in order to document and advance understanding of the provided examples and to encourage feedback.
 
-**Clips** are embedded or linked-to video that provide demonstration and application of the code with recorded commentary.
+When it enhances or highlights a concept or process, **clips** to demonstration videos are provided with recorded commentary.
 
