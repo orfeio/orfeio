@@ -20,7 +20,8 @@ For software projects, it is good practice to use a tool to manage packages and 
 
 We will use this tool to set up our project.
 
-1. [Access Adroit via the shell](https://myadroit.princeton.edu/pun/sys/shell/ssh/adroit).[^adroitreg]
+1. Access the cluster environment via a shell.[^adroitreg]
+
 2. Load Anaconda via the [Environment Modules](https://researchcomputing.princeton.edu/support/knowledge-base/modules) system.  For this example, we will use version 2023.3.
     ```
     module load anaconda3/2023.3
@@ -39,7 +40,7 @@ We will use this tool to set up our project.
     {: .note }
     The clusters have an [existing Gurobi installation](https://researchcomputing.princeton.edu/support/knowledge-base/julia#gurobi), so this is a little redundant, but it simplifies reproducibility of our development environment. 
 
-4. Visit [MyAdroit](https://myadroit.princeton.edu) and select *Jupyter* under the *Interactive Apps* menu.
+4. Visit the web interface for the cluster and select *Jupyter* under the *Interactive Apps* menu.
 
 5. Select the proper Anaconda version for the "Anaconda3 version used for starting up jupyter interface" option, noting that our example above used 2023.3.
 
@@ -106,4 +107,4 @@ We will use this tool to set up our project.
     ```
 
 [^ginst]: A complete installation of Gurobi should include modifications to the sourced environment that set values for the variables `GRB_LICENSE_FILE` and `GUROBI_HOME`, and prepend the location of `$GUROBI_HOME/bin` to the PATH and `$GUROBI_HOME/lib` to `LD_LIBRARY_PATH`.
-[^adroitreg]: You'll need to [have been granted access](https://researchcomputing.princeton.edu/systems/adroit#access) in order to do so.
+[^adroitreg]: You'll need to [have been granted access to Adroit](https://researchcomputing.princeton.edu/systems/adroit#access) or one of the other clusters in order to do so.
