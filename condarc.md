@@ -65,28 +65,20 @@ You may also repeat these steps if you'd like to start over as if it is your fir
 
 The [Initial Setup](#initial-setup) can be used to re-initialize your entire `conda` configuration, but that may be too aggressive.  To remove an existing environment, for instance, `torch-env`, pass its name to the `conda` command:
 
-    ```
     conda env remove --name torch-env
-    ```
 
 ## Installing New Packages into Existing Environments
 
 When working with environments via the Terminal, always load the Anaconda module, which then makes the `conda` command available.
 
-    ```
     module load anaconda3/2023.3
-    ```
 
 Once the `conda` command is available, you can proceed to activate the environment by name.
 
-    ```
     conda activate torch-env
-    ```
 
 Add new software to the active environment using either `conda` or `pip`.  When in doubt, favor `conda`, but don't discount `pip`.
 
-    ```
     conda install pandas
-    ```
 
 [^quota]: Please note that data stored outside your `$HOME` is [not backed up](https://researchcomputing.princeton.edu/support/knowledge-base/checkquota#scratch).  This is typically inconsequential if you know how to reconstruct your environment and maintain your own backups of any other project data you may wish to store there.
