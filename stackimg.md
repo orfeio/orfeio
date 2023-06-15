@@ -17,7 +17,7 @@ Paste each of the following commands into the Terminal app[^term] to download St
 	```
 2. Download Miniconda.
     ```
-    curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh -o ~/Downloads/miniconda.sh
+    curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-`arch`.sh -o ~/Downloads/miniconda.sh
     ```
 3. Install Miniconda.
     ```
