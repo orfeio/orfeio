@@ -1,12 +1,14 @@
 ---
-title: Rsafd
+title: Rsafd and Jupyter
 layout: default 
 nav_order: 6
 ---
 
 # Rsafd
 
-## macOS on Apple Silicon
+Rsafd is an R package that provides statistical analysis of financial data.
+
+## macOS
 
 Paste each of the following commands into the Terminal app.  You can find the Terminal app inside the Utilities folder found within the Applications folder, or search for "Terminal".
 
@@ -44,8 +46,9 @@ Paste each of the following commands into the Terminal app.  You can find the Te
     ```
 9. Install the necessary R packages.
     ```
-    PKG_CPPFLAGS="-DHAVE_WORKING_LOG1P" Rscript -e "install.packages(c('timeDate', 'quadprog', 'quantreg', 'plot3D', 'robustbase', 'scatterplot3d', 'splines', 'tseries', 'glasso', 'qgraph', 'reticulate', 'keras', 'rgl'), repos='https://cran.rstudio.com')"
+    PKG_CPPFLAGS="-DHAVE_WORKING_LOG1P" Rscript -e "install.packages(c('timeDate', 'quadprog', 'quantreg', 'plot3D', 'robustbase', 'scatterplot3d', 'splines', 'tseries', 'glasso', 'qgraph', 'reticulate', 'keras', 'rgl', 'glmnet'), repos='https://cran.rstudio.com')"
     ```
+    
 10. Download the Rsafd R package.
     ```
     curl https://carmona.princeton.edu/orf505/Rsafd.zip -o ~/Downloads/Rsafd.zip
