@@ -1,5 +1,5 @@
 ---
-title: Rsafd and Jupyter
+title: Rsafd
 layout: default 
 nav_order: 6
 ---
@@ -8,7 +8,9 @@ nav_order: 6
 
 Rsafd is an R package that provides statistical analysis of financial data.
 
-## macOS
+## Rsafd and Jupyter Notebook
+
+### macOS
 
 Paste each of the following commands into the Terminal app.  You can find the Terminal app inside the Utilities folder found within the Applications folder, or search for "Terminal".
 
@@ -73,7 +75,7 @@ Each time you wish to work with a Jupyter Notebook for the class, open the Termi
    ``` 
    jupyter notebook
    ```
-## Windows
+### Windows
 
 1. [Download and install Miniconda](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe).
 2. Open the Anaconda Prompt (Miniconda3) by finding it within the Windows (logo) Menu or by searching for it by name.
