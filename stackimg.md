@@ -37,7 +37,7 @@ Paste each of the following commands into the Terminal app[^term] to download St
     ```
 Each time you wish to work with and run StackImages, open the Terminal and then run the following commands.
 
-1. Activate the BobsAstro environment.
+1. Activate the `BobsAstro` environment.
     ```
     conda activate BobsAstro
     ```
