@@ -1,7 +1,6 @@
 ---
 title: StackImages
 layout: default 
-nav_order: 5
 ---
 
 # Running StackImages

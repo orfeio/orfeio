@@ -1,7 +1,6 @@
 ---
 title: SSH Public Key Authentication
 layout: default 
-nav_order: 2
 ---
 
 # SSH Public Key Authentication

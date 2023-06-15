@@ -1,7 +1,6 @@
 ---
 title: Gurobi & Python
 layout: default 
-nav_order: 1
 ---
 
 # Gurobi & Python

@@ -1,7 +1,6 @@
 ---
 title: Kdb+ Queries via R
 layout: default 
-nav_order: 2
 ---
 
 # Kdb+ Queries via R
