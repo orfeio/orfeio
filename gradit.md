@@ -56,7 +56,7 @@ layout: default
 * Programming and Related Assistance
 	* [orfe.io](https://orfe.io)
 	* [Book time](https://orfe.princeton.edu/bino)
-   	* [Research Computing Help Sessions](https://researchcomputing.princeton.edu/support/help-sessions)
+  	* [Research Computing Help Sessions](https://researchcomputing.princeton.edu/support/help-sessions)
  
 * Mailing Lists and Other Services
 	* ORFE-GRADS List
