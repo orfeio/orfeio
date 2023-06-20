@@ -3,13 +3,13 @@ title: Grad Links
 layout: default
 ---
 
-# ORFE Graduate IT Links
+# Graduate IT Links
 
-* [University Acceptable Use Policy for IT][1]
+* [University Acceptable Use Policy][1]
 * Wireless Networks
-	* [eduroam][4] - for almost everyone
-	* [puvisitor][5] - for visitors without an institutional affiliation, PU or otherwise
-	* [Residential][34]
+	* [eduroam][4] - for almost everyone and typical computing devices
+	* [puvisitor][5] - for visitors without an institutional affiliation, PU or otherwise (not you)
+	* [Residential][34] - for special-case devices
 * Printing
 	* [ORFE][7] - use the network address to configure a printer in either room 008 or 221
 		* orf-print008.princeton.edu
@@ -22,11 +22,11 @@ layout: default
 		* They'll need an account to charge against.
 
 * Software & Services - licensed or available for installation on personally-owned devices
+	* [MikTeX][29], [MacTeX][30], [texpad][31], [Overleaf][32]
+	* [Miniconda][33] - for Python, R, RStudio
 	* [Microsoft Office 365][10]
 	* [Matlab][11]
 	* [Mathematica][12]
-	* [MikTeX][29], [MacTeX][30], [texpad][31], [Overleaf][32]
-	* [Miniconda][33] - for Python and R
 	* [Zoom][35]
 	* [Dropbox][14]
 	* [Google Drive][15]
@@ -50,14 +50,13 @@ layout: default
 
 * [Equipment Loans][39]
 	* Presentation Laptops
-	* Monitors
 	* iPads
 	* Display Adapters & Presentation Remotes
 	
 * Mailing Lists and Other Services
-	* orfe-grad
-	* matlab-users
-	* [Github][27] - inquire regarding joining ORFE team.
+	* ORFE-GRADS List
+	* [Github][27] - inquire regarding joining ORFE team for collaboration/affiliation
+ 	* Research group, advisor Slack channels
 
 [1]: <https://www.princeton.edu/itpolicy>
 [3]: <https://princeton.service-now.com/service?id=kb_article&sys_id=26de00a81be3205041bd6286624bcbb3#section0>
