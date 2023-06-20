@@ -62,7 +62,7 @@ Each time you wish to work with and run StackImages, open the Terminal and then 
     ```
 4. Create a conda environment named `BobsAstro`.
     ```
-    conda create -n BobsAstro astropy astroquery scipy matplotlib wxpython opencv pyqt -y
+    conda create -n BobsAstro astropy astroquery scipy matplotlib wxpython opencv pyqt imageio -y
     ```
 5. Close the Anaconda Prompt.
 
