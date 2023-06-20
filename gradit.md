@@ -56,12 +56,12 @@ layout: default
 * Programming and Related Assistance
 	* [orfe.io](https://orfe.io)
 	* [Book time](https://orfe.princeton.edu/bino)
-  	* [Research Computing Help Sessions](https://researchcomputing.princeton.edu/support/help-sessions)
+	* [Research Computing Help Sessions](https://researchcomputing.princeton.edu/support/help-sessions)
  
 * Mailing Lists and Other Services
 	* ORFE-GRADS List
 	* [Github][27] - inquire regarding joining ORFE team for collaboration/affiliation
- 	* Research group, advisor Slack channels
+	* Research group, advisor Slack channels
 
 [1]: <https://www.princeton.edu/itpolicy>
 [3]: <https://princeton.service-now.com/service?id=kb_article&sys_id=26de00a81be3205041bd6286624bcbb3#section0>
