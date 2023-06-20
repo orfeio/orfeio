@@ -52,7 +52,12 @@ layout: default
 	* Presentation Laptops
 	* iPads
 	* Display Adapters & Presentation Remotes
-	
+
+* Programming and Related Assistance
+	* [orfe.io](https://orfe.io)
+	* [Book time](https://orfe.princeton.edu/bino)
+   	* [Research Computing Help Sessions](https://researchcomputing.princeton.edu/support/help-sessions)
+ 
 * Mailing Lists and Other Services
 	* ORFE-GRADS List
 	* [Github][27] - inquire regarding joining ORFE team for collaboration/affiliation
