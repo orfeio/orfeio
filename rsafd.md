@@ -52,7 +52,7 @@ Paste each of the following commands into the Terminal app.  You can find the Te
     
 10. Download the Rsafd R package.
     ```
-    curl https://carmona.princeton.edu/orf505/Rsafd.zip -o ~/Downloads/Rsafd.zip
+    curl -L https://carmona.princeton.edu/orf505/Rsafd.zip -o ~/Downloads/Rsafd.zip
     ```
 11. Decompress the Rsafd R package.
     ```
@@ -96,7 +96,7 @@ Each time you wish to work with a Jupyter Notebook for the class, open the Termi
     ```
 7. Download the Rsafd R package.
     ```
-    curl https://carmona.princeton.edu/orf505/Rsafd.zip -o Rsafd.zip
+    curl -L https://carmona.princeton.edu/orf505/Rsafd.zip -o Rsafd.zip
     ```
 8. Install the Rsafd R package.
     ```
