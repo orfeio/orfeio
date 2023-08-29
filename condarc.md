@@ -27,7 +27,7 @@ You may also repeat these steps if you'd like to start over as if it is your fir
 3. Configure `conda` to store both its package cache and environments in a location other than your `$HOME`.[^quota]  In addition, prioritize the `conda-forge` channel for software installations by default.  With this example command, we write the necessary configuration changes to a new `$HOME/.condarc` file.
     
     ```
-    PU_HPC_SYS=(`echo $HOSTNAME | tr -d '0123456789'`); if [ $PU_HPC_SYS = 'adroit' ]; then SCRATCH_LOC='network' ; else SCRATCH_LOC='gpfs' ; fi; echo -e "pkgs_dirs:\n - /scratch/$SCRATCH_LOC/$USER/.conda/pkgs\nenvs_dirs:\n - /scratch/$SCRATCH_LOC/$USER/.conda/envs" > $HOME/.condarc ; conda config --add channels conda-forge
+    PU_HPC_SYS=(`echo $HOSTNAME | tr -d '0123456789'`); if [ $PU_HPC_SYS = 'adroit' ]; then SCRATCH_LOC='network' ; else SCRATCH_LOC='gpfs' ; fi; echo -e "pkgs_dirs:\n - /scratch/$SCRATCH_LOC/$USER/.conda/pkgs\nenvs_dirs:\n - /scratch/$SCRATCH_LOC/$USER/.conda/envs" > $HOME/.condarc ; conda config --add channels conda-forge ; mkdir -p $HOME/.conda /scratch/$SCRATCH_LOC/$USER/.conda/{pkgs,envs} ; touch $HOME/.conda/environments.txt ; ln -s /scratch/$SCRATCH_LOC/$USER/.conda/{pkgs,envs} $HOME/.conda
     ```
 
 ## Creating a New Environment
