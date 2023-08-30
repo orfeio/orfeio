@@ -74,6 +74,7 @@ Each time you wish to work with a Jupyter Notebook for the class, open the Termi
    ``` 
    jupyter notebook
    ```
+
 ### Windows
 
 We will use the Windows Subsystem for Linux and the Ubuntu Linux app as the foundation of our development environment.  This will have the additional benefit of our environment working like other Linux systems, from cloud-provided servers to high performance computing environments.
