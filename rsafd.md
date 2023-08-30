@@ -76,41 +76,68 @@ Each time you wish to work with a Jupyter Notebook for the class, open the Termi
    ```
 ### Windows
 
-1. [Download and install Miniconda](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe).
-2. Open the Anaconda Prompt (Miniconda3) by finding it within the Windows (logo) Menu or by searching for it by name.
-3. Configure the conda command to prioritize the Conda Forge channel first, then the default.
+We will use the Windows Subsystem for Linux and the Ubuntu Linux app as the foundation of our development environment.  This will have the additional benefit of our environment working like other Linux systems, from cloud-provided servers to high performance computing environments.
+
+#### Prepare the Linux Subsystem
+
+1. Search for and open the "Turn Windows Features On and Off" control panel on your computer.
+2. Check the box labeled "Virtual Machine Platform", click the Ok button and then restart.
+3. [Install Windows Subsystem for Linux (WSL)](https://www.microsoft.com/store/productid/9P9TQF7MRM4R) via the Microsoft Store.
+4. [Install Ubuntu](https://www.microsoft.com/store/productid/9PDXGNCFSCZV) via the Microsoft Store.
+5. Open the Ubuntu app to complete the Linux installation process.  Provide a username and password when prompted.  These can optionally match those you already use to log in to your computer.
+
+#### Install and Configure the Development Environment
+
+Each of the remaining commands can be pasted into the Ubuntu app window.
+
+1. Download Miniconda.
+    ```
+    curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-`uname -m`.sh -o ~/miniconda.sh
+    ```
+2. Install Miniconda.
+    ```
+    chmod +x ~/miniconda.sh ; ~/miniconda.sh -bu
+    ```
+3. Initialize Miniconda, then close and re-open the Ubuntu app.
+   ```
+   ~/miniconda3/bin/conda init bash ; ~/miniconda3/bin/conda init zsh
+   ```
+4. Configure the conda command to prioritize the Conda Forge channel first, then the default.
     ```
     conda config --add channels conda-forge
     ```
-4. Create a conda environment named Renv.
+8. Create a conda environment named `Renv`.
     ```
-    conda create -y -n Renv tensorflow keras jupyter r-irkernel r-igraph curl
+    conda create -y -n Renv unzip jupyter==1.0.0 tensorflow==2.12.1 r-irkernel==1.3.2 keras==2.12.0
     ```
-5. Activate the Renv environment.
+9. Activate the Renv environment.
     ```
     conda activate Renv
     ```
-6. Install the necessary R packages.
+10. Install the necessary R packages.
     ```
     Rscript -e "install.packages(c('timeDate', 'quadprog', 'quantreg', 'plot3D', 'robustbase', 'scatterplot3d', 'splines', 'tseries', 'glasso', 'qgraph', 'reticulate', 'keras', 'rgl'), repos='https://cran.rstudio.com')"
     ```
-7. Download the Rsafd R package.
+11. Download and extract the Rsafd R package.
     ```
-    curl -L https://carmona.princeton.edu/orf505/Rsafd.zip -o Rsafd.zip
+    curl -L https://carmona.princeton.edu/orf505/Rsafd.zip -o Rsafd.zip ; unzip -o ~/Rsafd.zip -d ~
     ```
-8. Install the Rsafd R package.
+12. Install the Rsafd R package.
     ```
-    Rscript -e "install.packages('Rsafd.zip', repos = NULL)"
+    Rscript -e "install.packages('~/Rsafd', repos = NULL, type='source')"
     ```
-9. Close the Anaconda Prompt.
+13. Close the Ubuntu app.
 
-Each time you wish to work with a Jupyter Notebook for the class, open the Anaconda Prompt (Miniconda3) app and then run the following commands.
+Each time you wish to work with a Jupyter Notebook for the class, open the Ubuntu app and then run the following commands.
 
 1. Activate the Renv conda environment.
     ```
     conda activate Renv
     ```
-2. Open Jupyter.
+2. Start Jupyter.
     ```
     jupyter notebook
     ```
+3. Visit the [Jupyter web interface](http://localhost:8888/tree).
+   
+Note that for files and folders to be accessible to Jupyter, you will need to copy them to the Linux disk that appears along the left side of the File Explorer window.
