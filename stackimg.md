@@ -36,6 +36,17 @@ Paste each of the following commands into the Terminal app[^term] to download St
     conda create -n BobsAstro astropy astroquery scipy matplotlib wxpython opencv pyqt imageio -y
     ```
 
+In order to use StackImages with astro images, use the included GetFit python program to download them.
+
+1. Activate the `BobsAstro` environment.
+   ```
+   conda activate BobsAstro
+   ```
+2. Run the GetFit program and utilize it as instructed.
+   ```
+   pythonw $HOME/Downloads/StackImages/StackImages.py
+   ```
+
 Each time you wish to work with and run StackImages, open the Terminal and then run the following commands.
 
 1. Activate the `BobsAstro` environment.
@@ -73,6 +84,17 @@ Each time you wish to work with and run StackImages, open the Terminal and then 
    pip install opencv-contrib-python
    ```
 5. Close the Anaconda Prompt.
+
+In order to use StackImages with astro images, use the included GetFit python program to download them.
+
+1. Activate the `BobsAstro` environment.
+   ```
+   conda activate BobsAstro
+   ```
+2. Run the GetFit program and utilize it as instructed.
+   ```
+   pythonw $HOME/Downloads/StackImages/StackImages.py
+   ```
 
 Each time you wish to work with and run StackImages, open the Anaconda Prompt (Miniconda3) app and then run the following commands.
 
