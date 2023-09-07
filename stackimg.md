@@ -44,7 +44,7 @@ In order to use StackImages with astro images, use the included GetFit python pr
    ```
 2. Run the GetFit program and utilize it as instructed.
    ```
-   pythonw $HOME/Downloads/StackImages/StackImages.py
+   pythonw $HOME/Downloads/StackImages/GetFit.py
    ```
 
 Each time you wish to work with and run StackImages, open the Terminal and then run the following commands.
@@ -93,7 +93,7 @@ In order to use StackImages with astro images, use the included GetFit python pr
    ```
 2. Run the GetFit program and utilize it as instructed.
    ```
-   pythonw $HOME/Downloads/StackImages/StackImages.py
+   pythonw %USERPROFILE%\Downloads\StackImages\GetFit.py
    ```
 
 Each time you wish to work with and run StackImages, open the Anaconda Prompt (Miniconda3) app and then run the following commands.
