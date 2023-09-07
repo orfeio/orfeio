@@ -86,4 +86,4 @@ Each time you wish to work with and run StackImages, open the Anaconda Prompt (M
     ```
 
 [^term]: You can find the Terminal app inside the Utilities folder found within the Applications folder, or search for "Terminal".
-[^cv2issue]: On Windows as of this writing, the opencv package installs but then fails on import with a DLL not found error.  Rather than address the issue directly, we install the extra module via `pip`.
+[^cv2issue]: On Windows as of this writing, the `opencv` package will install via `conda` but then fails on import with an ImportError, indicating a DLL is not found.  Rather than address the issue directly, we install the extra dependency via `pip`.
