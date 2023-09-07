@@ -64,7 +64,7 @@ Each time you wish to work with and run StackImages, open the Terminal and then 
     ```
     conda create -n BobsAstro astropy astroquery scipy matplotlib wxpython pyqt imageio -y
     ```
-5. Activate the BobsAstro conda environment.
+5. Activate the `BobsAstro` conda environment.
    ```
    conda activate BobsAstro
    ```
@@ -76,7 +76,7 @@ Each time you wish to work with and run StackImages, open the Terminal and then 
 
 Each time you wish to work with and run StackImages, open the Anaconda Prompt (Miniconda3) app and then run the following commands.
 
-1. Activate the BobsAstro conda environment.
+1. Activate the `BobsAstro` conda environment.
     ```
     conda activate BobsAstro
     ```
