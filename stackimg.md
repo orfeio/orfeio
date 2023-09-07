@@ -35,17 +35,17 @@ Paste each of the following commands into the Terminal app[^term] to download St
     ```
     conda create -n BobsAstro astropy astroquery scipy matplotlib wxpython opencv pyqt imageio -y
     ```
+
 Each time you wish to work with and run StackImages, open the Terminal and then run the following commands.
 
 1. Activate the `BobsAstro` environment.
     ```
     conda activate BobsAstro
     ```
-
 2. Run StackImages.
-	```
-	pythonw $HOME/Downloads/StackImages/StackImages.py
-	```
+    ```
+    pythonw $HOME/Downloads/StackImages/StackImages.py
+    ```
 
 
 ## Windows
