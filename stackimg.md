@@ -13,7 +13,7 @@ Paste each of the following commands into the Terminal app[^term] to download St
 
 1. Download and extract StackImages.
 	```
-    curl -L https://vanderbei.princeton.edu/tmp/PyWin.tar -o $HOME/Downloads/StackImages.tar && if [[ ! -d $HOME/Downloads/StackImages ]]; then mkdir -p $HOME/Downloads/StackImages ; fi && tar -xvf StackImages.tar --directory=$HOME/Downloads/StackImages --strip-components=1 PyWin
+    curl -L https://vanderbei.princeton.edu/tmp/PyWin.tar -o $HOME/Downloads/StackImages.tar && if [[ ! -d $HOME/Downloads/StackImages ]]; then mkdir -p $HOME/Downloads/StackImages ; fi && tar -xvf $HOME/Downloads/StackImages.tar --directory=$HOME/Downloads/StackImages --strip-components=1 PyWin
 	```
 2. Download Miniconda.
     ```
