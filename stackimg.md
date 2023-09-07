@@ -62,19 +62,27 @@ Each time you wish to work with and run StackImages, open the Terminal and then 
     ```
 4. Create a conda environment named `BobsAstro`.
     ```
-    conda create -n BobsAstro astropy astroquery scipy matplotlib wxpython opencv pyqt imageio -y
+    conda create -n BobsAstro astropy astroquery scipy matplotlib wxpython pyqt imageio -y
     ```
+5. Activate the BobsAstro conda environment.
+   ```
+   conda activate BobsAstro
+   ```
+6. Install the `opencv` module via the `pip` command.
+   ```
+   pip install opencv-contrib-python
+   ```
 5. Close the Anaconda Prompt.
 
 Each time you wish to work with and run StackImages, open the Anaconda Prompt (Miniconda3) app and then run the following commands.
 
-1. Activate the Renv conda environment.
+1. Activate the BobsAstro conda environment.
     ```
     conda activate BobsAstro
     ```
 2. Run StackImages.
-	```
-	MISSING
-	```
+    ```
+    pythonw %USERPROFILE%\Downloads\StackImages\StackImages.py
+    ```
 
 [^term]: You can find the Terminal app inside the Utilities folder found within the Applications folder, or search for "Terminal".
