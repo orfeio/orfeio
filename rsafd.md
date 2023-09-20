@@ -37,6 +37,9 @@ Paste each of the following commands into the Terminal app.  You can find the Te
     ```
     conda create -y -n Renv tensorflow keras jupyter r-irkernel
     ```
+    {: .warning }
+    This step requires conda to resolve a complex set of dependencies such that each requested software component can install.  This short list should take tens of minutes, not hours.  If you're having trouble, try the [Alternative Environment Creation Method](#alternative-environment-creation-method) and then return to complete the remaining steps.
+    
 7. Activate the Renv environment.
     ```
     conda activate Renv
@@ -107,27 +110,30 @@ Each of the remaining commands can be pasted into the Ubuntu app window.
     ```
     conda config --add channels conda-forge
     ```
-8. Create a conda environment named `Renv`.
+5. Create a conda environment named `Renv`.
     ```
     conda create -y -n Renv unzip jupyter==1.0.0 tensorflow==2.12.1 r-irkernel==1.3.2 keras==2.12.0
     ```
-9. Activate the Renv environment.
+   {: .warning }
+   This step requires conda to resolve a complex set of dependencies such that each requested software component can install.  This short list should take tens of minutes, not hours.  If you're having trouble, try the [Alternative Environment Creation Method](#alternative-environment-creation-method) and then return to complete the remaining steps.
+   
+7. Activate the Renv environment.
     ```
     conda activate Renv
     ```
-10. Install the necessary R packages.
+8. Install the necessary R packages.
     ```
     Rscript -e "install.packages(c('timeDate', 'quadprog', 'quantreg', 'plot3D', 'robustbase', 'scatterplot3d', 'splines', 'tseries', 'glasso', 'qgraph', 'reticulate', 'keras', 'rgl'), repos='https://cran.rstudio.com')"
     ```
-11. Download and extract the Rsafd R package.
+9. Download and extract the Rsafd R package.
     ```
     curl -L https://carmona.princeton.edu/orf505/Rsafd.zip -o Rsafd.zip ; unzip -o ~/Rsafd.zip -d ~
     ```
-12. Install the Rsafd R package.
+10. Install the Rsafd R package.
     ```
     Rscript -e "install.packages('~/Rsafd', repos = NULL, type='source')"
     ```
-13. Close the Ubuntu app.
+11. Close the Ubuntu app.
 
 Each time you wish to work with a Jupyter Notebook for the class, open the Ubuntu app and then run the following commands.
 
@@ -142,3 +148,12 @@ Each time you wish to work with a Jupyter Notebook for the class, open the Ubunt
 3. Visit the [Jupyter web interface](http://localhost:8888/tree).
    
 Note that for files and folders to be accessible to Jupyter, you will need to copy them to the Linux disk that appears along the left side of the File Explorer window.
+
+## Alternative Environment Creation Method
+
+If the creation of the environment is taking 30 minutes or more on your computer or is otherwise incomplete, download the file corresponding to your architecture, then use the command `conda create --name Renv --file <file_name>` to create the environment, substituting the file's name and location for `<file_name>`.
+
+* [Mac (Apple Silicon)](renv-spec-macm.txt), [Mac (Intel)](renv-maci.txt)
+* [Windows (Intel)](renv-spec-win.txt)
+
+This method skips dependency resolution by providing conda a predefined list of software versions.
