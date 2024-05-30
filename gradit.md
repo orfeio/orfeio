@@ -14,13 +14,13 @@ layout: default
 	* [ORFE Copy Machine][8]
 		* Sends the print job to a queue.
 		* Release the job for printing at the printer itself.
-    		* Depletes [printing quota](https://kb.princeton.edu/8329#section5), [AIs may request an increase](https://orfe.princeton.edu/graduate/aiprint)
+		* Depletes [printing quota](https://kb.princeton.edu/8329#section5), [AIs may request an increase](https://orfe.princeton.edu/graduate/aiprint)
 	* [Print & Mail Services][9]
 		* Accommodates custom sizes, great for poster sessions.
 		* They'll need an account to charge against.
 	* Standalone Printers
-   		* Plug in to printers located in either 008 or 221 - Sherrerd Hall
-	    	* No quota, no color option
+		* Plug in to printers located in either 008 or 221 - Sherrerd Hall
+		* No quota, no color option
 
 * Software & Services - licensed or available for installation on personally-owned devices
 	* [MikTeX][29], [MacTeX][30], [texpad][31], [Overleaf][32]
