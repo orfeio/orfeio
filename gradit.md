@@ -18,8 +18,9 @@ layout: default
 	* [Print & Mail Services][9]
 		* Accommodates custom sizes, great for poster sessions.
 		* They'll need an account to charge against.
-	* [Standalone Printers]
+	* Standalone Printers
    		* Plug in to printers located in either 008 or 221 - Sherrerd Hall
+       		* No quota, no color option
 
 * Software & Services - licensed or available for installation on personally-owned devices
 	* [MikTeX][29], [MacTeX][30], [texpad][31], [Overleaf][32]
