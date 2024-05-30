@@ -19,7 +19,7 @@ layout: default
 		* Accommodates custom sizes, great for poster sessions.
 		* They'll need an account to charge against.
 	* Standalone Printers
-		* Plug in to printers located in either 008 or 221 - Sherrerd Hall
+		* Plug in to printers located in either 009 or 221 - Sherrerd Hall
 		* No quota, no color option
 
 * Software & Services - licensed or available for installation on personally-owned devices
