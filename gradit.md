@@ -11,15 +11,15 @@ layout: default
 	* [puvisitor][5] - for visitors without an institutional affiliation, PU or otherwise (not you)
 	* [Residential][34] - for special-case devices
 * Printing
-	* [ORFE][7] - use the network address to configure a printer in either room 008 or 221
-		* orf-print008.princeton.edu
-		* orf-print221.princeton.edu
-	* [OIT][8]
+	* [ORFE Copy Machine][8]
 		* Sends the print job to a queue.
 		* Release the job for printing at the printer itself.
+    		* Depletes [printing quota](https://kb.princeton.edu/8329#section5), [AIs may request an increase](https://orfe.princeton.edu/graduate/aiprint)
 	* [Print & Mail Services][9]
 		* Accommodates custom sizes, great for poster sessions.
 		* They'll need an account to charge against.
+	* [Standalone Printers]
+   		* Plug in to printers located in either 008 or 221 - Sherrerd Hall
 
 * Software & Services - licensed or available for installation on personally-owned devices
 	* [MikTeX][29], [MacTeX][30], [texpad][31], [Overleaf][32]
