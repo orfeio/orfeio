@@ -71,7 +71,7 @@ The [Initial Setup](#initial-setup) can be used to re-initialize your entire `co
 
 When working with environments via the Terminal, always load the Anaconda module, which then makes the `conda` command available.
 
-    module load anaconda3/2023.3
+    module load anaconda3/2024.2
 
 Once the `conda` command is available, you can proceed to activate the environment by name.
 
