@@ -15,7 +15,7 @@ You may also repeat these steps if you'd like to start over as if it is your fir
 1. Open a Terminal on the remote system and use the `module` command to load Anaconda.  The `module` command activates one of many software installations available on a given system.
     
     ```
-    module load anaconda3/2023.3
+    module load anaconda3/2024.2
     ```
 
 2. Remove any existing conda settings, environments, and related data from the Terminal.  With this example command, we move the `.condarc` file and the `.conda` folder to `condarc-backup` and `conda-backup` in `$HOME`.  Dispose of them to [free up quota](https://researchcomputing.princeton.edu/support/knowledge-base/checkquota) once you have a working environment.
