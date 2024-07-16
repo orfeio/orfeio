@@ -35,7 +35,7 @@ Paste each of the following commands into the Terminal app.  You can find the Te
     ```
 6. Create a conda environment named Renv.
     ```
-    conda create -y -n Renv tensorflow keras jupyter r-irkernel
+    conda create -y -n Renv tensorflow keras jupyter r-irkernel r-hmisc
     ```
     {: .warning }
     This step requires conda to resolve a complex set of dependencies such that each requested software component can install.  This short list should take tens of minutes, not hours.  If you're having trouble, try the [Alternative Environment Creation Method](#alternative-environment-creation-method) and then return to complete the remaining steps.
@@ -112,7 +112,7 @@ Each of the remaining commands can be pasted into the Ubuntu app window.
     ```
 5. Create a conda environment named `Renv`.
     ```
-    conda create -y -n Renv unzip jupyter==1.0.0 tensorflow==2.12.1 r-irkernel==1.3.2 keras==2.12.0
+    conda create -y -n Renv unzip jupyter==1.0.0 tensorflow==2.12.1 r-irkernel==1.3.2 keras==2.12.0 r-hmisc
     ```
    {: .warning }
    This step requires conda to resolve a complex set of dependencies such that each requested software component can install.  This short list should take tens of minutes, not hours.  If you're having trouble, try the [Alternative Environment Creation Method](#alternative-environment-creation-method) and then return to complete the remaining steps.
