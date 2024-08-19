@@ -13,7 +13,7 @@ Do not join [puvisitor][5]; it is for short-term visitors without an institution
 
 ## Printing
 
-Print to [108 - Sherrerd Hall][8] via PawPrint.  Bring your Princeton ID card to release the job at the printer.
+Print to 108 - Sherrerd Hall [via PawPrint][8].  Bring your Princeton ID card to release the job at the printer.
 
 Printing depletes your [printing quota](https://kb.princeton.edu/8329#section5), but [AIs may request an increase](https://orfe.princeton.edu/graduate/aiprint) if necessary.
 
