@@ -40,7 +40,7 @@ Both licensed and free software is available for installation on or use from per
 
 Crashplan Professional is available [at a discounted rate][40] for Princeton University affiliates to back up data on personally-owned devices.
 
-## Computation, Web Pages, & Equipment
+## Computation
 
 [Princeton Virtual Desktops][37] are remotely accessible virtual machines good for small runs, development, and testing.  By instructor or AI request, they can also be grouped and preconfigured to support coursework with preinstalled software and environments.
 
@@ -57,9 +57,11 @@ The [Google Sites][41] service is available to students to host personal web sit
 Graduate students are encouraged to [submit links to both professional sites and CVs][42] for inclusion on the [ORFE Web Site][25].
 
 
-## Equipment Loans
+## Equipment
 
 The department maintains a limited supply of display adapters and presentation remotes for short-term loan; iPad loans are available to AIs that have a remote teaching component.
+
+Where possible, incoming students are provided an external display at their assigned workspace that they may use for the duration of their program.
 
 ## Programming & Related Assistance
 
