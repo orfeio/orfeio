@@ -1,68 +1,81 @@
 ---
-title: Grad Links
+title: Graduate IT Links
 layout: default
 ---
 
-# Graduate IT Links
+All IT use is subject to the [University Acceptable Use Policy][1].
 
-* [University Acceptable Use Policy][1]
-* Wireless Networks
-	* [eduroam][4] - for almost everyone and typical computing devices
-	* [puvisitor][5] - for visitors without an institutional affiliation, PU or otherwise (not you)
-	* [Residential][34] - for special-case devices
-* Printing
-	* [ORFE Copy Machine][8]
-		* Sends the print job to a queue.
-		* Release the job for printing at the printer itself.
-		* Depletes [printing quota](https://kb.princeton.edu/8329#section5), [AIs may request an increase](https://orfe.princeton.edu/graduate/aiprint)
-	* [Print & Mail Services][9]
-		* Accommodates custom sizes, great for poster sessions.
-		* They'll need an account to charge against.
-	* Standalone Printers
-		* Plug in to printers located in either 009 or 221 - Sherrerd Hall
-		* No quota, no color option
+## Wireless Networks
 
-* Software & Services - licensed or available for installation on personally-owned devices
-	* [MikTeX][29], [MacTeX][30], [texpad][31], [Overleaf][32]
-	* [Miniconda][33] - for Python, R, RStudio
-	* [Microsoft Office 365][10]
-	* [Matlab][11]
-	* [Mathematica][12]
-	* [Zoom][35]
-	* [Dropbox][14]
-	* [Google Drive][15]
-	* [VPN][16]
-	* [GitHub][38]
+Join [eduroam][4] at Princeton or other institutions using your Princeton email address as the credential.
 
-* [Backup][18]
+Do not join [puvisitor][5]; it is for short-term visitors without an institutional affiliation.  Remove the network from your device's list of remembered networks if you are experiencing network connectivity trouble.
 
-* Computation
-	* [Princeton Virtual Desktop][37]
-	* ORFE Compute Resources
-	* [Research Computing][19]
-		* [Adroit][21]
-		* Additional Servers
-	* [Cloud Services][36]
+## Printing
 
-* Web Pages
-	* [Scholar Pages][24]
-	* [ORFE Web Site][25]
-	* [Github Pages][28]
+Print to [108 - Sherrerd Hall][8] via PawPrint.  Bring your Princeton ID card to release the job at the printer.
 
-* [Equipment Loans][39]
-	* Presentation Laptops
-	* iPads
-	* Display Adapters & Presentation Remotes
+Printing depletes your [printing quota](https://kb.princeton.edu/8329#section5), but [AIs may request an increase](https://orfe.princeton.edu/graduate/aiprint) if necessary.
 
-* Programming and Related Assistance
-	* [orfe.io](https://orfe.io)
-	* [Book time](https://orfe.princeton.edu/bino)
-	* [Research Computing Help Sessions](https://researchcomputing.princeton.edu/support/help-sessions)
- 
-* Mailing Lists and Other Services
-	* ORFE-GRADS List
-	* [Github][27] - inquire regarding joining ORFE team for collaboration/affiliation
-	* Research group, advisor Slack channels
+[Print & Mail Services][9] can accommodate large, irregular sized print jobs, such as posters.
+
+ Standalone printers are located in 009 - Sherrerd Hall, 221 - Sherrerd Hall, and select offices.  Plug a device in to print; no quota is enforced, and there is no color option.
+
+## Software & Services
+
+Both licensed and free software is available for installation on or use from personally-owned devices.
+
+* [Overleaf][32] ([MikTeX][29], [MacTeX][30], [texpad][31])
+* [Miniconda][33] - for Python, R, RStudio
+* [Microsoft Office 365][10]
+* [Matlab][11]
+* [Mathematica][12]
+* [Zoom][35]
+* [Dropbox][14]
+* [Google Drive][15]
+* [VPN][16]
+* [GitHub][38]
+
+## Backup
+
+Crashplan Professional is available [at a discounted rate][40] for Princeton University affiliates to back up data on personally-owned devices.
+
+## Computation, Web Pages, & Equipment
+
+[Princeton Virtual Desktops][37] are remotely accessible virtual machines good for small runs, development, and testing.  By instructor or AI request, they can also be grouped and preconfigured to support coursework with preinstalled software and environments.
+
+[Research Computing][19] manages the High Performance Computing (HPC) resources for the University.  Use the starter [Adroit][21] system to familiarize yourself with an HPC system.  Access to additional servers used as ORFE compute resources is contingent upon Principal Investigator (PI) collaboration and/or research justification.
+
+[Cloud Services][36] are also available.
+
+## Web Pages
+
+The [Google Sites][41] service is available to students to host personal web sites and content.
+
+[Github Pages][28] is a recommended option for creating a professional site independent of Princeton that can integrate with a code portfolio. 
+
+Graduate students are encouraged to [submit links to both professional sites and CVs][42] for inclusion on the [ORFE Web Site][25].
+
+
+## Equipment Loans
+
+The department maintains a limited supply of display adapters and presentation remotes for short-term loan; iPad loans are available to AIs that have a remote teaching component.
+
+## Programming & Related Assistance
+
+The [Princeton Python Users Group][43] provides regular and ongoing support and collaboration among Princeton's Python development community.
+
+The [Research Computing Help Sessions](https://researchcomputing.princeton.edu/support/help-sessions) offer help on getting the most out of running your code on the HPC systems.
+
+The ORFE department's Manager of Information Technologies [accepts regular appointments](https://orfe.princeton.edu/bino) to meet and discuss programming challenges and other technical difficulties.
+
+## Mailing Lists & Communication
+
+The Graduate Program Administrator adds all incoming ORFE graduate students to an ORFE-GRADS Mailing List.
+
+Various PIs maintain communication with their research groups via Slack and Zulip.  Ask your adviser.
+
+Inquire about joining the ORFE team on [Github][27] if you find you need capabilities that are not available on a free, personal account, or if you are developing code as part of a group.
 
 [1]: <https://www.princeton.edu/itpolicy>
 [3]: <https://princeton.service-now.com/service?id=kb_article&sys_id=26de00a81be3205041bd6286624bcbb3#section0>
@@ -86,7 +99,7 @@ layout: default
 [22]: <https://orfe.princeton.edu/help/hardware>
 [23]: <https://www.princeton.edu/clusters/cluster-list>
 [24]: <https://scholar.princeton.edu>
-[25]: <https://orfe.princeton.edu/login>
+[25]: <https://orfe.princeton.edu/>
 [27]: <https://www.princeton.edu/researchcomputing/services/github-form-new>
 [28]: <https://pages.github.com>
 [29]: <https://miktex.org>
@@ -100,3 +113,7 @@ layout: default
 [37]: <https://kb.princeton.edu/KB0012822>
 [38]: <https://forms.rc.princeton.edu/github/>
 [39]: <https://princeton.service-now.com/service?id=kb_article&sys_id=6569cd6b1bea94108f8243f4bd4bcbe1>
+[40]: <https://www.crashplan.com/princeton-university/>
+[41]: <https://kb.princeton.edu/1174>
+[42]: <https://orfe.princeton.edu/gradcv>
+[43]: <https://researchcomputing.princeton.edu/learn/user-groups/python>
