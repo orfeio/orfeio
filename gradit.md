@@ -9,7 +9,7 @@ All IT use is subject to the [University Acceptable Use Policy][1].
 
 Join [eduroam][4] at Princeton or other institutions using your Princeton email address as the credential.
 
-Do not join [puvisitor][5]; it is for short-term visitors without an institutional affiliation.  Remove the network from your device's list of remembered networks if you are experiencing network connectivity trouble.
+Do not join [puvisitor][5]; it is for short-term visitors without an institutional affiliation.  Remove puvisitor from your device's list of remembered networks if you are experiencing connectivity trouble.
 
 ## Printing
 
@@ -19,7 +19,7 @@ Printing depletes your [printing quota](https://kb.princeton.edu/8329#section5),
 
 [Print & Mail Services][9] can accommodate large, irregular sized print jobs, such as posters.
 
- Standalone printers are located in 009 - Sherrerd Hall, 221 - Sherrerd Hall, and select offices.  Plug a device in to print; no quota is enforced, and there is no color option.
+Standalone printers are located in 009 & 221 - Sherrerd Hall, and select offices. Plug a device in to the printer using the provided cable.
 
 ## Software & Services
 
@@ -44,9 +44,9 @@ Crashplan Professional is available [at a discounted rate][40] for Princeton Uni
 
 [Princeton Virtual Desktops][37] are remotely accessible virtual machines good for small runs, development, and testing.  By instructor or AI request, they can also be grouped and preconfigured to support coursework with preinstalled software and environments.
 
-[Research Computing][19] manages the High Performance Computing (HPC) resources for the University.  Use the starter [Adroit][21] system to familiarize yourself with an HPC system.  Access to additional servers used as ORFE compute resources is contingent upon Principal Investigator (PI) collaboration and/or research justification.
+[Research Computing][19] manages the High Performance Computing (HPC) resources for the University.  Use the starter [Adroit][21] system to familiarize yourself with an HPC system.
 
-[Cloud Services][36] are also available.
+Access to additional servers used as ORFE compute resources is contingent upon Principal Investigator (PI) collaboration and/or research justification, including available [Cloud Services][36] in excess of student allowances.
 
 ## Web Pages
 
