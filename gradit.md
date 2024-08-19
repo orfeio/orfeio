@@ -5,11 +5,13 @@ layout: default
 
 All IT use is subject to the [University Acceptable Use Policy][1].
 
-## Wireless Networks
+## Wireless & Connectivity
 
 Join [eduroam][4] at Princeton or other institutions using your Princeton email address as the credential.
 
 Do not join [puvisitor][5]; it is for short-term visitors without an institutional affiliation.  Remove puvisitor from your device's list of remembered networks if you are experiencing connectivity trouble.
+
+Connect to the [GlobalProtect VPN][16] if you are working from off-campus and require access to campus resources, or suspect a problem accessing resources while on-campus.
 
 ## Printing
 
@@ -27,13 +29,12 @@ Both licensed and free software is available for installation on or use from per
 
 * [Overleaf][32] ([MikTeX][29], [MacTeX][30], [texpad][31])
 * [Miniconda][33] - for Python, R, RStudio
-* [Microsoft Office 365][10]
+* [Microsoft 365][10]
 * [Matlab][11]
 * [Mathematica][12]
 * [Zoom][35]
-* [Dropbox][14]
 * [Google Drive][15]
-* [VPN][16]
+* [GlobalProtect VPN][16]
 * [GitHub][38]
 
 ## Backup
