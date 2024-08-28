@@ -78,7 +78,7 @@ Each time you wish to work with a Jupyter Notebook for the class, open the Termi
    jupyter notebook
    ```
 
-### Colab
+### Google Colab
 
 Paste each of the following commands into a new cell of a Google Colab notebook that is set to use the R runtime.
 
