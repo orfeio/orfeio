@@ -82,8 +82,7 @@ Each time you wish to work with a Jupyter Notebook for the class, open the Termi
 
 Paste each of the following commands into a new cell of a Google Colab notebook that is set to use the R runtime.
 
-     {: .warning }
-     The runtime is set under the Runtime menu by clicking on Change Runtime Type.
+The runtime is set under the Runtime menu by clicking on Change Runtime Type.
 
 1. Install the necessary R packages.
     ```
