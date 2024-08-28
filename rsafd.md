@@ -78,6 +78,31 @@ Each time you wish to work with a Jupyter Notebook for the class, open the Termi
    jupyter notebook
    ```
 
+### Colab
+
+Paste each of the following commands into a new cell of a Google Colab notebook that is set to use the R runtime.
+
+     {: .warning }
+     The runtime is set under the Runtime menu by clicking on Change Runtime Type.
+
+1. Install the necessary R packages.
+    ```
+    install.packages(c('timeDate', 'quadprog', 'quantreg', 'plot3D', 'robustbase', 'scatterplot3d', 'splines', 'tseries', 'glasso', 'qgraph', 'reticulate', 'keras', 'rgl', 'glmnet'), repos='https://cran.rstudio.com')
+    ```
+2. Download the Rsafd package.
+   ``` 
+   rsafd_url <- 'https://carmona.princeton.edu/orf505/Rsafd.zip'
+   download.file(rsafd_url, destfile = 'Rsafd.zip')
+   ```
+3. Decompress the Rsafd package.
+   ``` 
+   unzip('Rsafd.zip')
+   ```
+4. Install the Rsafd package.
+   ```
+   install.packages('Rsafd', repos = NULL, type = 'source')
+   ```
+
 ### Windows
 
 We will use the Windows Subsystem for Linux and the Ubuntu Linux app as the foundation of our development environment.  This will have the additional benefit of our environment working like other Linux systems, from cloud-provided servers to high performance computing environments.
