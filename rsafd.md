@@ -76,7 +76,8 @@ Each time you wish to work with a Jupyter Notebook for the class, open the Termi
 
     {: .warning }
     If you have a previously-installed version of Anaconda, you may need to use the following to activate the environment.
-    `conda activate $HOME/miniconda3/envs/Renv`
+
+   `conda activate $HOME/miniconda3/envs/Renv`
 
 2. Open Jupyter.
    ``` 
