@@ -25,47 +25,48 @@ Paste each of the following commands into the Terminal app.  You can find the Te
     ```
     chmod +x ~/Downloads/miniconda.sh ; ~/Downloads/miniconda.sh -bu
     ```
-4. Initialize Miniconda, then close and re-open the Terminal app.
+4. Initialize Miniconda.
     ```
     ~/miniconda3/bin/conda init bash ; ~/miniconda3/bin/conda init zsh
     ```
-5. Configure the conda command to prioritize the Apple channel first, the Conda Forge channel second.
+5. Close and re-open the Terminal.
+6. Configure the conda command to prioritize the Apple channel first, the Conda Forge channel second.
     ```
     conda config --add channels conda-forge --add channels apple
     ```
-6. Create a conda environment named Renv.
+7. Create a conda environment named Renv.
     ```
     conda create -y -n Renv tensorflow keras jupyter r-irkernel r-hmisc
     ```
     {: .warning }
     This step requires conda to resolve a complex set of dependencies such that each requested software component can install.  This short list should take tens of minutes, not hours.  If you're having trouble, try the [Alternative Environment Creation Method](#alternative-environment-creation-method) and then return to complete the remaining steps.
     
-7. Activate the Renv environment.
+8. Activate the Renv environment.
     ```
     conda activate Renv
     ```
-8. Correct for a bug in the environment installation.
+9. Correct for a bug in the environment installation.
     ```
     [ -f $CONDA_PREFIX/lib/gcc/arm64-apple-darwin20.0.0/11.3.0 ] && ln -s $CONDA_PREFIX/lib/gcc/arm64-apple-darwin20.0.0/11.3.0 $CONDA_PREFIX/lib/gcc/arm64-apple-darwin20.0.0/11.0.1
     ```
-9. Install the necessary R packages.
+10. Install the necessary R packages.
     ```
     PKG_CPPFLAGS="-DHAVE_WORKING_LOG1P" Rscript -e "install.packages(c('timeDate', 'quadprog', 'quantreg', 'plot3D', 'robustbase', 'scatterplot3d', 'splines', 'tseries', 'glasso', 'qgraph', 'reticulate', 'keras', 'rgl', 'glmnet'), repos='https://cran.rstudio.com')"
     ```
     
-10. Download the Rsafd R package.
+11. Download the Rsafd R package.
     ```
     curl -L https://carmona.princeton.edu/orf505/Rsafd.zip -o ~/Downloads/Rsafd.zip
     ```
-11. Decompress the Rsafd R package.
+12. Decompress the Rsafd R package.
     ```
     unzip -o ~/Downloads/Rsafd.zip -d ~/Downloads
     ```
-12. Install the Rsafd R package.
+13. Install the Rsafd R package.
     ```
     Rscript -e "install.packages('~/Downloads/Rsafd', repos = NULL, type='source')"
     ```
-13. Close Terminal.
+14. Close Terminal.
 
 Each time you wish to work with a Jupyter Notebook for the class, open the Terminal app and then run the following commands.
 
