@@ -68,6 +68,8 @@ Where possible, incoming students are provided an external display at their assi
 
 The [Princeton Python Users Group][43] provides regular and ongoing support and collaboration among Princeton's Python development community.
 
+The [Princeton R Group][44] hosts talks on applied use cases of R and is co-organized by DDSS Graduate Fellows of Social Data Science and DDSS staff members.
+
 The [Research Computing Help Sessions](https://researchcomputing.princeton.edu/support/help-sessions) offer help on getting the most out of running your code on the HPC systems.
 
 The ORFE department's Manager of Information Technologies [accepts regular appointments](https://orfe.princeton.edu/bino) to meet and discuss programming challenges and other technical difficulties.
@@ -120,3 +122,4 @@ Inquire about joining the ORFE team on [Github][27] if you find you need capabil
 [41]: <https://kb.princeton.edu/1174>
 [42]: <https://orfe.princeton.edu/gradcv>
 [43]: <https://researchcomputing.princeton.edu/learn/user-groups/python>
+[44]: <https://princeton-r-group.github.io/>
