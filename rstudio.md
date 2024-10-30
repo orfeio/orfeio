@@ -1,7 +1,6 @@
 ---
 title: Rstudio Sessions
 layout: default
-nav_order: 6
 ---
 
 # Rstudio Sessions and Environment Management
