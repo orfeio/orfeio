@@ -19,8 +19,8 @@ This guide assumes you have:
 
 Paste each of the following commands into the Terminal app on your device.  
 
-{ .note }
-The example prefix `cd ~/Downloads/software-project` for example commands may be omitted if the Terminal is already open to your software project's folder.  You can check by examining the output of the command `pwd`.
+    { .note }
+    The example prefix `cd ~/Downloads/software-project` for example commands may be omitted if the Terminal is already open to your software project's folder.  You can check by examining the output of the command `pwd`.
 
 ## Local Git
 
@@ -56,16 +56,44 @@ From a Terminal, set Git's defaults, initialize Git's tracking of the software p
 
 ## Working with Git
 
-With the project initialized and version controlled, you may develop the software project, staging the changes and committing them with descriptive comments.  You can combine staging and committing in one step.
+With the project initialized, you may begin development work the software project, staging changes and committing with descriptive comments.  You can combine staging and committing in one step.
    ```
    git commit -am "Combined Staging and Commit of successful debug"
    ```
 
-Commits are typically made to branches.  Branches other than the default, named **main** can be associated with new features, testing and development, or any other phase of development.  The current branch is displayed when checking the status of staged files and commits.
+Commits are typically made to branches.  The default branch is named **main**.  The current branch is displayed when checking the status of staged files and commits.
     ```
     git status
-    ``` 
+    ```
+New branches are often used to develop features, test significant changes, enable work assignments, or contain other phases of development.
 
 ## Push to GitHub
 
-## Pull from Github
+1. Set up key.
+    ```
+    [ -z "$(git config --global user.email)" ] && echo "Error: user.email is not set in Git configuration." >&2 && exit 1 || ssh-keygen -t ed25519 -C "$(git config --global user.email)" -f ~/.ssh/github-local -N ""
+    ```
+
+2. Copy key to GitHub.
+
+3. Test key.
+
+4. Add remote.
+    ```
+    git remote add origin git@github.com:sally/ride-project.git
+    ```
+4. Load key for use.
+5. Push local to remote.
+    ```
+    git push -u origin main
+    ```
+
+## Pull from GitHub
+
+1. Set up key.
+    ```
+    [ -z "$(git config --global user.email)" ] && echo "Error: user.email is not set in Git configuration." >&2 && exit 1 || ssh-keygen -t ed25519 -C "$(git config --global user.email)" -f ~/.ssh/github-hpc -N ""
+    ```
+2. Test key.
+3. Load key for use.
+4. Pull remote to local.
