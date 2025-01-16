@@ -22,7 +22,7 @@ This guide assumes you have:
 
 Paste each of the following commands into the Terminal app on your device.  
 
-{ .note }
+{: .note }
 The example prefix cd ~/Downloads/software-project for example commands may be omitted if the Terminal is already open to your software project's folder.  You can check by examining the output of the command pwd.
 
 {: .warning }
@@ -45,7 +45,7 @@ From a Terminal, set Git's defaults, initialize Git's tracking of the software p
     ```
     cd ~/Downloads/software-project && printf ".DS_Store\n.env\ndatasets/" >> .gitignore
     ```
-    { .note }
+    {: .note }
     On many systems, files that begin their name with a "." are hidden by default.  You may need to show hidden files if you wish to make edits or changes manually to the `.gitignore` file.  For instance, Command+Shift+. on macOS will temporarily show all hidden files.
     
 4. Check your code for secrets and move them to the `.env` file.  Refactor your code to incorporate the use of the [python-dotenv package](https://pypi.org/project/python-dotenv) to load the secrets, if required.
