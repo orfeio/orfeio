@@ -23,7 +23,7 @@ This guide assumes you have:
 Paste each of the following commands into the Terminal app on your device.  
 
 { .note }
-The example prefix `cd ~/Downloads/software-project` for example commands may be omitted if the Terminal is already open to your software project's folder.  You can check by examining the output of the command `pwd`.
+The example prefix cd ~/Downloads/software-project for example commands may be omitted if the Terminal is already open to your software project's folder.  You can check by examining the output of the command pwd.
 
 {: .warning }
 By default, Git is not designed to support the tracking of large files, and is of limited utility if those files are binary or do not change often.
