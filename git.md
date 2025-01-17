@@ -111,8 +111,10 @@ Git uses the term "upstream" to mean any remote repository that may be used for 
 ### HPC Git
 
 Open an Terminal within your HPC environment and configure Git within the HPC environment with your name and email.
+
 {: .note }
 Skip this step if you already used this guide to create at least one repository.  This information will be available to anyone with access to the project.
+
 ```
 git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
