@@ -28,18 +28,23 @@ By default, Git is not designed to support the tracking of large files, and is o
 
 ### Local Git
 
-From a Terminal, set Git's defaults, initialize Git's tracking of the software project, and start committing changes.  Perform each step by pasting the sample commands into the Terminal.
+From a Terminal, set Git's defaults, initialize Git's tracking of the software project, and start committing changes.
 
-Unless otherwise noted, the steps assume your Terminal is open to the folder or directory of your software project.  Use the command `cd software-project`, substituting the path to your project folder.
+Unless otherwise noted, the steps assume your Terminal is open to the folder or directory of your software project.
+
+Use the command `cd software-project`, substituting the path to your project folder.
 
 {: .warning }
-Examine the output of the `pwd` command to confirm you are working in the correct location.
+Examine the output of the `pwd` command to confirm you are working in your software project's folder or directory.
 
-1. Configure Git within the local environment with your name and email.  This information will be available to anyone with access to the project.
+1. Configure Git within the local environment with your name and email.
     ```
     git config --global user.name "Your Name"
     git config --global user.email "your.email@example.com"
     ```
+    {: .note }
+    This information will be available to anyone with access to the project.
+
 2. Initialize Git's tracking of the project from within the project's folder.
     ```
     git init
@@ -160,9 +165,8 @@ You may need to run `ssh-add ~/.ssh/github-*` before pushing or pulling any chan
 
 | Git Command                    | Purpose                                                              |
 | ------------------------------ | -------------------------------------------------------------------- |
-| git status                     | Check the status of staged files and pending commits.                |
-| git add .                      | Stage all new and modified files, except those in .gitignore.        |
-| git commit -m "Commit Message" | Commit the changes to staged files, adding your own "Commit Message" |
-| git push                       | Send committed changes to a remote.                                  |
-| git pull                       | Receive committed changes from a remote.                             |
-[Common Git Commands]
+| `git status`                     | Check the status of staged files and pending commits.                |
+| `git add .`                      | Stage all new and modified files, except those in .gitignore.        |
+| `git commit -m "Commit Message"` | Commit the changes to staged files, adding your own "Commit Message" |
+| `git push`                       | Send committed changes to a remote.                                  |
+| `git pull`                       | Receive committed changes from a remote.                             |
