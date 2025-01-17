@@ -171,7 +171,7 @@ You may need to run `ssh-add ~/.ssh/github-*` before pushing or pulling any chan
 
 ### Typical Scenarios
 
-#### Local HPC
+#### Local Edit
 
 You've identified a bug, have fixed it on your local device, and need to apply it to code that will run on the HPC environment.
 
