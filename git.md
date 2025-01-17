@@ -9,10 +9,7 @@ layout: default
 
 [GitHub](https://github.com) is a web-based hosting service for Git-managed projects, enabling collaboration on both public and private repositories.
 
-This guide outlines setting up Git on a local device, sending changes to a private GitHub repository, and pulling changes from GitHub to an HPC environment.
-
-{: .note }
-For the purpose of initial setup, this guide also assumes most development work will be done locally, sent to GitHub, and pulled onto the HPC environment.  Once initial setup is complete, the distributed nature of Git allows for reordering this workflow.  Samples are provided in the [Usage section](#usage).
+For the purpose of [Initial Setup](#initial-setup), this guide assumes development work will be done locally, sent to GitHub, and pulled onto an HPC environment.  Once initial setup is complete, the distributed nature of Git allows for reordering this workflow.  Samples are provided in the [Usage section](#usage).
 
 ## Prerequisites
 
