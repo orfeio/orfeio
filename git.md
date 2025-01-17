@@ -66,11 +66,9 @@ All steps, unless otherwise noted, assume your Terminal is open to the folder or
    git commit -m "Initial Commit"
    ```
 
-### Establish a Trust Relationship between Local Git & GitHub
+#### Establish a Trust Relationship with GitHub
 
 A trust relationship, established via SSH Keys, enables pushing local changes via Git to the remote repository on GitHub.
-
-#### Add SSH Public Key to GiHub
 
 1. Create a private and public key pair on your local device.
     ```
