@@ -36,12 +36,12 @@ From a Terminal, set Git's defaults, initialize Git's tracking of the software p
 All steps, unless otherwise noted, assume your Terminal is open to the folder or directory of your software project.  Use the command `cd software-project`, substituting the path to your project folder for `software-project`, and examine the output of the `pwd` command to confirm your location.
 
 1. Configure Git within the local environment with your name and email.
+    {: .note }
+    Skip this step if you already used this guide to create at least one repository.  This information will be available to anyone with access to the project.
     ```
     git config --global user.name "Your Name"
     git config --global user.email "your.email@example.com"
     ```
-    {: .note }
-    This information will be available to anyone with access to the project.
 
 2. Initialize Git's tracking of the project from within the project's folder.
     ```
@@ -66,9 +66,12 @@ All steps, unless otherwise noted, assume your Terminal is open to the folder or
    git commit -m "Initial Commit"
    ```
 
-#### Establish a Trust Relationship with GitHub
+#### Establish Trust between Local & GitHub
 
 A trust relationship, established via SSH Keys, enables pushing local changes via Git to the remote repository on GitHub.
+
+{: .note }
+Skip this section if you have already set up one or more repositories using this guide.
 
 1. Create a private and public key pair on your local device.
     ```
@@ -108,14 +111,19 @@ Git uses the term "upstream" to mean any remote repository that may be used for 
 ### HPC Git
 
 Open an Terminal within your HPC environment and configure Git within the HPC environment with your name and email.
+{: .note }
+Skip this step if you already used this guide to create at least one repository.  This information will be available to anyone with access to the project.
 ```
 git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
 ```
 
-#### Establish a Trust Relationship between HPC and GitHub
+#### Establish Trust between HPC & GitHub
 
 A trust relationship, established via SSH Keys, also enables pulling changes via Git to the HPC environment from a remote repository on GitHub.
+
+{: .note }
+Skip this section if you have already set up one or more repositories using this guide.
 
 1. Create a private and public key pair for HPC use.
     ```
