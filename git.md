@@ -19,7 +19,7 @@ For the purpose of [Initial Setup](#initial-setup), this guide assumes developme
 - A new, empty, private repository in your personal GitHub account.
 - Access to [an HPC environment](/condarc.html).
 
-Paste each of the following commands into the Terminal app on your device.  
+Paste or type each of the following commands into the Terminal app on your device.  
 
 {: .warning }
 By default, Git is not designed to support the tracking of large files, and is of limited utility if those files are binary or do not change often.  Synchronize large files and datasets by other means, such as [rsync or Globus](https://researchcomputing.princeton.edu/education/external-online-resources/data-transfer), or research and understand enabling [Git Large File Support](https://git-lfs.com).
