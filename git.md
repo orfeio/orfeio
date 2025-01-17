@@ -159,7 +159,7 @@ A trust relationship, established via SSH Keys, also enables pulling changes via
 With [Initial Setup](#initial-setup) complete, you may stage files, commit changes, and push (send) or pull (receive) changes on your local device or the HPC environment, with the hosted GitHub repository acting as intermediary; you may also do the same via the GitHub web site.
 
 {: .note }
-You may need to run `ssh-add ~/.ssh/github-*` before pushing or pulling any changes if your local device has restarted or you've disconnected from the HPC environment in order to reload the SSH key.
+You may occasionally need to run `ssh-add ~/.ssh/github-*` before pushing or pulling changes.  This command reloads the SSH key that is necessary for interacting with GitHub, and may not be loaded if you closed an HPC session or restarted your local device.
 
 | Git Command                    | Purpose                                                              |
 | ------------------------------ | -------------------------------------------------------------------- |
