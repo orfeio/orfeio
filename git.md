@@ -169,7 +169,7 @@ You may occasionally need to run `ssh-add ~/.ssh/github-*` before pushing or pul
 
 ### Typical Scenarios
 
-{ .warning }
+{: .warning }
 These scenarios assume you are the only developer of the project are not using [branches](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) to track features, divide work among collaborators, or for any other reason.  Branching is a central feature of version control systems, but outside the scope of this narrow guide's focus.
 
 #### Local Edit
