@@ -9,7 +9,9 @@ layout: default
 
 [GitHub](https://github.com) is a web-based hosting service for Git-managed projects, enabling collaboration on both public and private repositories.
 
-For the purpose of [Initial Setup](#initial-setup), this guide assumes development work will be done locally, sent to GitHub, and pulled onto an HPC environment.  Once initial setup is complete, the distributed nature of Git allows for reordering this workflow.  Samples are provided in the [Usage section](#usage).
+For the purpose of [Initial Setup](#initial-setup), this guide assumes development work will be done locally, sent to GitHub, and pulled onto an HPC environment.
+
+Once setup is complete, the distributed nature of Git allows for reordering this workflow using the commands and notes provided in the [Usage section](#usage).
 
 ## Prerequisites
 
@@ -19,23 +21,19 @@ For the purpose of [Initial Setup](#initial-setup), this guide assumes developme
 - A new, empty, private repository in your personal GitHub account.
 - Access to [an HPC environment](/condarc.html).
 
-Paste or type each of the following commands into the Terminal app on your device.  
+Paste or type each of the provided commands into the Terminal app on your device.  
 
 {: .warning }
-By default, Git is not designed to support the tracking of large files, and is of limited utility if those files are binary or do not change often.  Synchronize large files and datasets by other means, such as [rsync or Globus](https://researchcomputing.princeton.edu/education/external-online-resources/data-transfer), or research and understand enabling [Git Large File Support](https://git-lfs.com).
+By default, Git is not designed to track large files, and is of limited utility with binary or static files.  Synchronize large files and static datasets by other means, such as [rsync or Globus](https://researchcomputing.princeton.edu/education/external-online-resources/data-transfer), or research and study the implications of enabling [Git Large File Support](https://git-lfs.com), if necessary.
 
 ## Initial Setup
 
 ### Local Git
 
-From a Terminal, set Git's defaults, initialize Git's tracking of the software project, and start committing changes.
-
-Unless otherwise noted, the steps assume your Terminal is open to the folder or directory of your software project.
-
-Use the command `cd software-project`, substituting the path to your project folder.
+From a Terminal, set Git's defaults, initialize Git's tracking of the software project, and commit one change.
 
 {: .warning }
-Examine the output of the `pwd` command to confirm you are working in your software project's folder or directory.
+All steps, unless otherwise noted, assume your Terminal is open to the folder or directory of your software project.  Use the command `cd software-project`, substituting the path to your project folder for `software-project`, and examine the output of the `pwd` command to confirm your location.
 
 1. Configure Git within the local environment with your name and email.
     ```
@@ -141,12 +139,12 @@ A trust relationship, established via SSH Keys, also enables pulling changes via
 
 #### Clone from GitHub
 
-1. Clone the repository to the HPC environment.
+1. Clone the repository to the HPC environment; this will create a folder named `software-project`; do not create it on your own.
     ```
     git clone git@github.com:<your_username>/software-project.git
     ```
 
-2. Change to the project directory or folder.
+2. Change to the newly created project directory or folder.
    ```
    cd software-project
    ```
@@ -158,7 +156,7 @@ A trust relationship, established via SSH Keys, also enables pulling changes via
 
 ## Usage
 
-With [Initial Setup](#initial-setup) complete, you may stage files, commit changes, and push (send) or pull (receive) changes on either your local device or the HPC environment, with the hosted GitHub repository acting as intermediary.
+With [Initial Setup](#initial-setup) complete, you may stage files, commit changes, and push (send) or pull (receive) changes on your local device or the HPC environment, with the hosted GitHub repository acting as intermediary; you may also do the same via the GitHub web site.
 
 {: .note }
 You may need to run `ssh-add ~/.ssh/github-*` before pushing or pulling any changes if your local device has restarted or you've disconnected from the HPC environment in order to reload the SSH key.
@@ -170,3 +168,38 @@ You may need to run `ssh-add ~/.ssh/github-*` before pushing or pulling any chan
 | `git commit -m "Commit Message"` | Commit the changes to staged files, adding your own "Commit Message" |
 | `git push`                       | Send committed changes to a remote.                                  |
 | `git pull`                       | Receive committed changes from a remote.                             |
+
+### Typical Scenarios
+
+#### Local HPC
+
+You've identified a bug, have fixed it on your local device, and need to apply it to code that will run on the HPC environment.
+
+1. Open the Terminal app on your local device and change to your project folder or directory.
+2. Check the status of Git.
+3. Stage the modified file(s).
+4. Commit the change(s).
+5. Push the change to the remote.
+6. Open a Terminal within the HPC environment to your project folder or directory.
+7. Pull the change from the remote.
+
+#### GitHub Edit
+
+You've identified a documentation error, have corrected it on GitHub, and need to apply it all repository locations.
+
+1. Open the Terminal app on your local device and change to your project folder or directory.
+2. Pull the change from the remote.
+3. Open a Terminal within the HPC environment to your project folder or directory.
+4. Pull the change from the remote.
+
+#### HPC Edit
+
+You've identified a bug, have fixed it on the HPC environment, and want that code on your local device as well.
+
+1. Open a Terminal within the HPC environment to your project folder or directory.
+2. Check the status of Git.
+3. Stage the modified file(s).
+4. Commit the change(s).
+5. Push the change to the remote.
+6. Open the Terminal app on your local device and change to your project folder or directory.
+7. Pull the change from the remote.
