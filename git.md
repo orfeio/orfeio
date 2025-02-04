@@ -225,4 +225,4 @@ You've started a new software project on your local device and have created a co
 4. Stage the initial files.
 5. Commit the staged files.
 6. Add a remote repository named `origin` with the corresponding GitHub repository information.
-
+7. Push changes to the remote GitHub repository.
