@@ -214,3 +214,15 @@ You've identified a bug, have fixed it on the HPC environment, and want that cod
 5. Push the change to the remote.
 6. Open the Terminal app on your local device and change to your project folder or directory.
 7. Pull the change from the remote.
+
+#### Start Another Project
+
+You've started a new software project on your local device and have created a corresponding GitHub repository.
+
+1. Open the Teriminal app on your device and change to your project folder or directory.
+2. Initialize the project folder as a new, local Git repository.
+3. Create an ignore file for the project.
+4. Stage the initial files.
+5. Commit the staged files.
+6. Add a remote repository named `origin` with the corresponding GitHub repository information.
+
