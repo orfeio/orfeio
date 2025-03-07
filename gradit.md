@@ -5,6 +5,8 @@ layout: default
 
 All IT use is subject to the [University Acceptable Use Policy][1].
 
+See the [University IT resources for graduate students](https://oit.princeton.edu/get-started/faculty-and-staff) for guidance on setting up University credentials and additional, initial resources.
+
 ## Wireless & Connectivity
 
 Join [eduroam][4] at Princeton or other institutions using your Princeton email address as the credential.
