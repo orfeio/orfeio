@@ -17,7 +17,7 @@ Connect to the [GlobalProtect VPN][16] if you are working from off-campus and re
 
 ## Printing
 
-Print to 108 - Sherrerd Hall [via PawPrint][8].  Bring your Princeton ID card to release the job at the printer.
+Print to 108 - Sherrerd Hall (the copier) [via PawPrint or PawPrintColor][8].  Bring your Princeton ID card to release the job at the printer.
 
 Printing depletes your [printing quota](https://kb.princeton.edu/8329#section5), but [AIs may request an increase](https://orfe.princeton.edu/graduate/aiprint) if necessary.
 
@@ -89,7 +89,7 @@ Inquire about joining the ORFE team on [Github][27] if you find you need capabil
 [4]: <https://kb.princeton.edu/KB0010255>
 [5]: <https://princeton.service-now.com/service?id=kb_article&sys_id=26de00a81be3205041bd6286624bcbb3#section0>
 [7]: <http://orfe.princeton.edu/help/printing>
-[8]: <https://kb.princeton.edu/8329>
+[8]: <https://orfe.princeton.edu/print>
 [9]: <https://printandmail.princeton.edu>
 [10]: <https://kb.princeton.edu/9416>
 [11]: <https://kb.princeton.edu/KB0011341>
