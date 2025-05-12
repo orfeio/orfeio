@@ -15,6 +15,7 @@ If you must embed a video into a PDF document, do not attempt to implement it in
 
 Instead, create placeholder slides within the LaTeX, then [use Adobe Acrobat to insert the video media](https://helpx.adobe.com/acrobat/using/rich-media.html).
 
+{: .warning }
 **Do not** expect the PDF to render properly, if at all, on untested devices that lack a current version of Acrobat.
 
 ### Example Embedded Video Placeholder Slide
