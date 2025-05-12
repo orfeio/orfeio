@@ -7,7 +7,7 @@ layout: default
 
 [Do not embed video in PDFs](https://www.overleaf.com/learn/latex/Questions/How_can_I_embed_a_video_in_my_PDF_using_LaTeX%3F).
 
-[Link](https://www.overleaf.com/learn/latex/Hyperlinks) to the video files or a hosted version instead.
+[Link](https://www.overleaf.com/learn/latex/Hyperlinks) to the video files or hosted versions instead.
 
 ## A Problematic Workaround
 
@@ -15,9 +15,9 @@ If you must embed a video into a PDF document, do not attempt to implement it in
 
 Instead, create placeholder slides within the LaTeX, then [use Adobe Acrobat to insert the video media](https://helpx.adobe.com/acrobat/using/rich-media.html).
 
-**Do not** expect the PDF to render properly, if at all, on untested devices that lack current version of Acrobat.
+**Do not** expect the PDF to render properly, if at all, on untested devices that lack a current version of Acrobat.
 
-### Example Embedded Video Slide
+### Example Embedded Video Placeholder Slide
 
 ```
 \documentclass{beamer}
