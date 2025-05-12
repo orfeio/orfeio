@@ -19,6 +19,7 @@ Instead, create placeholder slides within the LaTeX, then [use Adobe Acrobat to 
 
 ### Example Embedded Video Placeholder Slide
 
+{% raw %}
 ```
 \documentclass{beamer}
 % Theme can be changed or removed for a cleaner look
@@ -38,3 +39,4 @@ Instead, create placeholder slides within the LaTeX, then [use Adobe Acrobat to 
 \end{frame}
 \end{document}
 ```
+{% endraw %}
