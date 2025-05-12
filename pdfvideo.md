@@ -23,16 +23,15 @@ Instead, create placeholder slides within the LaTeX, then [use Adobe Acrobat to 
 {% raw %}
 ```
 \documentclass{beamer}
-% Theme can be changed or removed for a cleaner look
 \usetheme{default}
 \begin{document}
-\begin{frame}[plain] % 'plain' removes header/footer
+\begin{frame}[plain]
 \vfill
 \begin{center}
 \fbox{%
 \begin{minipage}[c][0.6\textheight][c]{0.8\textwidth}
 \centering
-\Large Insert Video Here
+\Large Insert Video with Acrobat Here
 \end{minipage}%
 }
 \end{center}
