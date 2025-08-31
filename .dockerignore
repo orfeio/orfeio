@@ -1,0 +1,13 @@
+# Exclude build artifacts and transient files from Docker build context
+_site/
+.jekyll-cache/
+.bundle/
+.git/
+.gitignore
+.DS_Store
+node_modules/
+# Ruby / bundler artifacts
+vendor/bundle/
+# Editor / OS cruft
+*.swp
+Thumbs.db

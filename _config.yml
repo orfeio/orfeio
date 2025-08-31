@@ -1,9 +1,14 @@
 title: orfe.io
 description: Code, comments, and clips for ORFE academics.
 theme: just-the-docs
-color_scheme: dark
+color_scheme: light
 
 url: https://orfe.io
+
+# Limit generated in-page Table of Contents to start at second-level headings (##)
+# and include through fourth-level (####). This excludes the page title (H1).
+kramdown:
+  toc_levels: 2..4
 
 callouts:
   note:

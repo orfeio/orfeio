@@ -6,15 +6,17 @@ layout: default
 # Rsafd
 
 Rsafd is an R package that provides statistical analysis of financial data.
+## Contents
+{: .no_toc }
+
+* TOC
+{:toc}
 
 ## All Platforms via Docker 
 
-Use [a pre-built Docker image](https://github.com/princetonuniversity/rsafd-docker) that includes, Python, R, [Rsafd](https://github.com/princetonuniversity/rsafd), dependencies, and Jupyter.
+Use [a pre-built Docker image](https://github.com/princetonuniversity/rsafd-docker) that includes Python, R, [Rsafd](https://github.com/princetonuniversity/rsafd), dependencies, and Jupyter.
 
-### Prerequisites
- * An installation of Docker Desktop (macOS/Windows) or Docker Engine (Linux).
-
-### Run the Container
+ Requires an installation of [Docker Desktop](https://docs.docker.com/desktop/).
 
 Open Docker Desktop and run the command appropriate for your platform in the Docker Desktop Terminal window.
 
@@ -26,11 +28,13 @@ Windows (PowerShell):
 ```
 docker run -p 8888:8888 -e JUPYTER_LINK_ONLY=1 -v "${env:USERPROFILE}:/workspace/notebooks" ghcr.io/princetonuniversity/rsafd-docker:latest
 ```
-Open the printed URL in your browser to begin working with notebooks.
+Open the printed URL in your browser to begin working with notebooks; see [the README](https://github.com/princetonuniversity/rsafd-docker#rsafd-docker) for further details.
 
 Follow the manual, conda-based instructions if you prefer a local (non-container) installation or wish to customize at a lower level.
 
-## Rsafd and Jupyter Notebook
+## Manual Installation
+
+The manual installation is native to your operating system and based on a [conda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
 
 ### macOS
 
