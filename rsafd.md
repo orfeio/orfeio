@@ -7,6 +7,29 @@ layout: default
 
 Rsafd is an R package that provides statistical analysis of financial data.
 
+## All Platforms via Docker 
+
+Use [a pre-built Docker image](https://github.com/princetonuniversity/rsafd-docker) that includes, Python, R, [Rsafd](https://github.com/princetonuniversity/rsafd), dependencies, and Jupyter.
+
+### Prerequisites
+ * An installation of Docker Desktop (macOS/Windows) or Docker Engine (Linux).
+
+### Run the Container
+
+Open Docker Desktop and run the command appropriate for your platform in the Docker Desktop Terminal window.
+
+macOS / Linux:
+```
+docker run -p 8888:8888 -e JUPYTER_LINK_ONLY=1 -v "$HOME":/workspace/notebooks ghcr.io/princetonuniversity/rsafd-docker:latest
+```
+Windows (PowerShell):
+```
+docker run -p 8888:8888 -e JUPYTER_LINK_ONLY=1 -v "${env:USERPROFILE}:/workspace/notebooks" ghcr.io/princetonuniversity/rsafd-docker:latest
+```
+Open the printed URL in your browser to begin working with notebooks.
+
+Follow the manual, conda-based instructions if you prefer a local (non-container) installation or wish to customize at a lower level.
+
 ## Rsafd and Jupyter Notebook
 
 ### macOS
