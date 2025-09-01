@@ -21,7 +21,7 @@ Use the command `conda create --name Renv --file <file_name>` to create the `Ren
 * [Mac (Apple Silicon)](renv-spec-macm.txt), [Mac (Intel)](renv-maci.txt)
 * [Windows (Intel)](renv-spec-win.txt)
 
-Continue with [step 8 for macOS](#step8mac) or [step 7 for Windows](#step7win) of the Manual Install.
+Continue with [step 8 for macOS](#step8mac) or [step 6 for Windows](#step6win) of the Manual Install.
 
 ## Docker Container
 
@@ -179,23 +179,23 @@ Each of the remaining commands can be pasted into the Ubuntu app window.
     ```
     conda create -y -n Renv unzip jupyter==1.0.0 tensorflow==2.12.1 r-irkernel==1.3.2 keras==2.12.0 r-hmisc
     ```
-7. <a name="step7win"></a>Activate the Renv environment.
+6. <a name="step6win"></a>Activate the Renv environment.
     ```
     conda activate Renv
     ```
-8. Install the necessary R packages.
+7. Install the necessary R packages.
     ```
     Rscript -e "install.packages(c('timeDate', 'quadprog', 'quantreg', 'plot3D', 'robustbase', 'scatterplot3d', 'splines', 'tseries', 'glasso', 'qgraph', 'reticulate', 'keras', 'rgl'), repos='https://cran.rstudio.com')"
     ```
-9. Download and extract the Rsafd R package.
+8. Download and extract the Rsafd R package.
     ```
     curl -L https://carmona.princeton.edu/orf505/Rsafd.zip -o Rsafd.zip ; unzip -o ~/Rsafd.zip -d ~
     ```
-10. Install the Rsafd R package.
+9. Install the Rsafd R package.
     ```
     Rscript -e "install.packages('~/Rsafd', repos = NULL, type='source')"
     ```
-11. Close the Ubuntu app.
+10. Close the Ubuntu app.
 
 Each time you wish to work with a Jupyter Notebook for the class, open the Ubuntu app and then run the following commands.
 
