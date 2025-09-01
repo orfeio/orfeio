@@ -25,23 +25,19 @@ Continue with [step 8 for macOS](#step8mac) or [step 6 for Windows](#step6win) o
 
 ## Docker Container
 
-Use [a pre-built Docker image](https://github.com/princetonuniversity/rsafd-docker) that includes Python, R, [Rsafd](https://github.com/princetonuniversity/rsafd), dependencies, and Jupyter.
-
- Requires an installation of [Docker Desktop](https://docs.docker.com/desktop/).
+If you have an installation of [Docker Desktop](https://docs.docker.com/desktop/), [a pre-built Docker image](https://github.com/princetonuniversity/rsafd-docker) is available that includes Python, R, [Rsafd](https://github.com/princetonuniversity/rsafd), dependencies, and Jupyter.
 
 Open Docker Desktop and run the command appropriate for your platform in the Docker Desktop Terminal window.
 
-macOS / Linux:
+### macOS / Linux:
 ```
 docker run -p 8888:8888 -e JUPYTER_LINK_ONLY=1 -v "$HOME":/workspace/notebooks ghcr.io/princetonuniversity/rsafd-docker:latest
 ```
-Windows (PowerShell):
+### Windows (PowerShell):
 ```
 docker run -p 8888:8888 -e JUPYTER_LINK_ONLY=1 -v "${env:USERPROFILE}:/workspace/notebooks" ghcr.io/princetonuniversity/rsafd-docker:latest
 ```
 Open the printed URL in your browser to begin working with notebooks; see [the README](https://github.com/princetonuniversity/rsafd-docker#rsafd-docker) for further details.
-
-Follow the manual, conda-based instructions if you prefer a local (non-container) installation or wish to customize at a lower level.
 
 ## Manual Install 
 
