@@ -12,7 +12,14 @@ Rsafd is an R package that provides statistical analysis of financial data.
 * TOC
 {:toc}
 
-## All Platforms via Docker 
+## Quick Install
+
+Download the file corresponding to your architecture, then use the command `conda create --name Renv --file <file_name>` to create the environment, substituting the file's name and location for `<file_name>`.
+
+* [Mac (Apple Silicon)](renv-spec-macm.txt), [Mac (Intel)](renv-maci.txt)
+* [Windows (Intel)](renv-spec-win.txt)
+
+## Docker Container
 
 Use [a pre-built Docker image](https://github.com/princetonuniversity/rsafd-docker) that includes Python, R, [Rsafd](https://github.com/princetonuniversity/rsafd), dependencies, and Jupyter.
 
@@ -32,7 +39,7 @@ Open the printed URL in your browser to begin working with notebooks; see [the R
 
 Follow the manual, conda-based instructions if you prefer a local (non-container) installation or wish to customize at a lower level.
 
-## Manual Installation
+## Manual Install 
 
 The manual installation is native to your operating system and based on a [conda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
 
@@ -207,11 +214,3 @@ Each time you wish to work with a Jupyter Notebook for the class, open the Ubunt
    
 Note that for files and folders to be accessible to Jupyter, you will need to copy them to the Linux disk that appears along the left side of the File Explorer window.
 
-## Alternative Environment Creation Method
-
-If the creation of the environment is taking 30 minutes or more on your computer or is otherwise incomplete, download the file corresponding to your architecture, then use the command `conda create --name Renv --file <file_name>` to create the environment, substituting the file's name and location for `<file_name>`.
-
-* [Mac (Apple Silicon)](renv-spec-macm.txt), [Mac (Intel)](renv-maci.txt)
-* [Windows (Intel)](renv-spec-win.txt)
-
-This method skips dependency resolution by providing conda a predefined list of software versions.
