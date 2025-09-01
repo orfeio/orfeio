@@ -12,12 +12,16 @@ Rsafd is an R package that provides statistical analysis of financial data.
 * TOC
 {:toc}
 
-## Quick Install
+## Semi-Automated Install
 
-Download the file corresponding to your architecture, then use the command `conda create --name Renv --file <file_name>` to create the environment, substituting the file's name and location for `<file_name>`.
+If you already have an conda installation, download the file corresponding to your architecture below.  
+
+Use the command `conda create --name Renv --file <file_name>` to create the `Renv` conda environment, substituting the file's name and location for `<file_name>`.
 
 * [Mac (Apple Silicon)](renv-spec-macm.txt), [Mac (Intel)](renv-maci.txt)
 * [Windows (Intel)](renv-spec-win.txt)
+
+Continue with [Step 7](#step7) of the manual installation instructions.
 
 ## Docker Container
 
@@ -179,10 +183,7 @@ Each of the remaining commands can be pasted into the Ubuntu app window.
     ```
     conda create -y -n Renv unzip jupyter==1.0.0 tensorflow==2.12.1 r-irkernel==1.3.2 keras==2.12.0 r-hmisc
     ```
-   {: .warning }
-   This step requires conda to resolve a complex set of dependencies such that each requested software component can install.  This short list should take tens of minutes, not hours.  If you're having trouble, try the [Alternative Environment Creation Method](#alternative-environment-creation-method) and then return to complete the remaining steps.
-   
-7. Activate the Renv environment.
+7. <a name="step7"></a>Activate the Renv environment.
     ```
     conda activate Renv
     ```
