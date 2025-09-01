@@ -1,5 +1,5 @@
 ---
-title: Graduate IT Links
+title: IT Links for Grad Students
 layout: default
 ---
 
