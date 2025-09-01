@@ -29,11 +29,11 @@ If you have an installation of [Docker Desktop](https://docs.docker.com/desktop/
 
 Open Docker Desktop and run the command appropriate for your platform in the Docker Desktop Terminal window.
 
-### macOS / Linux:
+### macOS / Linux
 ```
 docker run -p 8888:8888 -e JUPYTER_LINK_ONLY=1 -v "$HOME":/workspace/notebooks ghcr.io/princetonuniversity/rsafd-docker:latest
 ```
-### Windows (PowerShell):
+### Windows (PowerShell)
 ```
 docker run -p 8888:8888 -e JUPYTER_LINK_ONLY=1 -v "${env:USERPROFILE}:/workspace/notebooks" ghcr.io/princetonuniversity/rsafd-docker:latest
 ```
