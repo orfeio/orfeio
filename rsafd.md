@@ -21,7 +21,7 @@ Use the command `conda create --name Renv --file <file_name>` to create the `Ren
 * [Mac (Apple Silicon)](renv-spec-macm.txt), [Mac (Intel)](renv-maci.txt)
 * [Windows (Intel)](renv-spec-win.txt)
 
-Continue with [Step 7](#step7) of the manual installation instructions.
+Continue with [step 8 for macOS](#step8mac) or [step 7 for Windows](#step7win) of the Manual Install.
 
 ## Docker Container
 
@@ -76,10 +76,7 @@ Paste each of the following commands into the Terminal app.  You can find the Te
     ```
     conda create -y -n Renv tensorflow keras jupyter r-irkernel r-hmisc
     ```
-    {: .warning }
-    This step requires conda to resolve a complex set of dependencies such that each requested software component can install.  This short list should take tens of minutes, not hours.  If you're having trouble, try the [Alternative Environment Creation Method](#alternative-environment-creation-method) and then return to complete the remaining steps.
-    
-8. Activate the Renv environment.
+8. <a name="step8mac"></a>Activate the Renv environment.
     ```
     conda activate Renv
     ```
@@ -91,7 +88,6 @@ Paste each of the following commands into the Terminal app.  You can find the Te
     ```
     PKG_CPPFLAGS="-DHAVE_WORKING_LOG1P" Rscript -e "install.packages(c('timeDate', 'quadprog', 'quantreg', 'plot3D', 'robustbase', 'scatterplot3d', 'splines', 'tseries', 'glasso', 'qgraph', 'reticulate', 'keras', 'rgl', 'glmnet'), repos='https://cran.rstudio.com')"
     ```
-    
 11. Download the Rsafd R package.
     ```
     curl -L https://carmona.princeton.edu/orf505/Rsafd.zip -o ~/Downloads/Rsafd.zip
@@ -183,7 +179,7 @@ Each of the remaining commands can be pasted into the Ubuntu app window.
     ```
     conda create -y -n Renv unzip jupyter==1.0.0 tensorflow==2.12.1 r-irkernel==1.3.2 keras==2.12.0 r-hmisc
     ```
-7. <a name="step7"></a>Activate the Renv environment.
+7. <a name="step7win"></a>Activate the Renv environment.
     ```
     conda activate Renv
     ```
