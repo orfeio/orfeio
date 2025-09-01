@@ -18,7 +18,8 @@ If you already have a conda installation, download the file corresponding to you
 
 Use the command `conda create --name Renv --file <file_name>` to create the `Renv` conda environment, substituting the file's name and location for `<file_name>`.
 
-* [Mac (Apple Silicon)](renv-spec-macm.txt), [Mac (Intel)](renv-maci.txt)
+* [Mac (Apple Silicon)](renv-spec-macm.txt)
+<!-- * [Mac (Intel)](renv-maci.txt) -->
 * [Windows (Intel)](renv-spec-win.txt)
 
 Continue with [step 8 for macOS](#step8mac) or [step 6 for Windows](#step6win) of the Manual Install.
@@ -127,8 +128,11 @@ The runtime is set under the Runtime menu by clicking on Change Runtime Type.
     ```
 2. Download the Rsafd package.
    ``` 
-   rsafd_url <- 'https://carmona.princeton.edu/orf505/Rsafd.zip'
-   download.file(rsafd_url, destfile = 'Rsafd.zip')
+   # Install remotes if not already installed
+   if(!require(remotes)) install.packages("remotes")
+
+    #  Install the package directly from GitHub
+    remotes::install_github("princetonuniversity/rsafd")
    ```
 3. Decompress the Rsafd package.
    ``` 
