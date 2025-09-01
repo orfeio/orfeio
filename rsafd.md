@@ -14,7 +14,7 @@ Rsafd is an R package that provides statistical analysis of financial data.
 
 ## Semi-Automated Install
 
-If you already have an conda installation, download the file corresponding to your architecture below.  
+If you already have a conda installation, download the file corresponding to your architecture below.  
 
 Use the command `conda create --name Renv --file <file_name>` to create the `Renv` conda environment, substituting the file's name and location for `<file_name>`.
 
