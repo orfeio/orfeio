@@ -77,13 +77,9 @@ Paste each of the following commands into the Terminal app.  You can find the Te
     ```
     conda activate Renv
     ```
-9. Correct for a bug in the environment installation.
-    ```
-    [ -f $CONDA_PREFIX/lib/gcc/arm64-apple-darwin20.0.0/11.3.0 ] && ln -s $CONDA_PREFIX/lib/gcc/arm64-apple-darwin20.0.0/11.3.0 $CONDA_PREFIX/lib/gcc/arm64-apple-darwin20.0.0/11.0.1
-    ```
 10. Install the necessary R packages.
     ```
-    PKG_CPPFLAGS="-DHAVE_WORKING_LOG1P" Rscript -e "install.packages(c('timeDate', 'quadprog', 'quantreg', 'plot3D', 'robustbase', 'scatterplot3d', 'splines', 'tseries', 'glasso', 'qgraph', 'reticulate', 'keras', 'rgl', 'glmnet'), repos='https://cran.rstudio.com')"
+    Rscript -e "install.packages(c('timeDate', 'quadprog', 'quantreg', 'plot3D', 'robustbase', 'scatterplot3d', 'splines', 'tseries', 'glasso', 'qgraph', 'reticulate', 'keras', 'rgl', 'glmnet'), repos='https://cran.rstudio.com')"
     ```
 11. Download the Rsafd R package.
     ```
