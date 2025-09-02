@@ -118,20 +118,23 @@ Each time you wish to work with a Jupyter Notebook for the class, open the Termi
 ### Google Colab
 
 Each time you work with Google Colab (including the first time you install Rsafd) connect your Google Drive with this code from a Python runtime cell (change runtime using the icon in the lower-right corner).
-    ```
-    from google.colab import drive
-    drive.mount('/content/drive')
-    ```
+```
+from google.colab import drive
+drive.mount('/content/drive')
+```
+
 Switch to an R runtime, and prepare the R environment, executing this code.
-    ```
-	drive_lib <- "/content/drive/MyDrive/Rlibs"
-	dir.create(drive_lib, showWarnings = FALSE, recursive = TRUE)
-	.libPaths(c(drive_lib, .libPaths()))
-	``` 
+```
+drive_lib <- "/content/drive/MyDrive/Rlibs"
+dir.create(drive_lib, showWarnings = FALSE, recursive = TRUE)
+.libPaths(c(drive_lib, .libPaths()))
+``` 
+
 To install Rsafd the first time, run the following command in an R runtime cell to install the Rsafd dependencies.
-    ```
-    install.packages(c('timeDate', 'quadprog', 'quantreg', 'plot3D', 'robustbase', 'scatterplot3d', 'splines', 'tseries', 'glasso', 'qgraph', 'reticulate', 'keras', 'rgl', 'glmnet'), repos='https://cran.rstudio.com', lib = drive_lib)
-    ```
+```
+install.packages(c('timeDate', 'quadprog', 'quantreg', 'plot3D', 'robustbase', 'scatterplot3d', 'splines', 'tseries', 'glasso', 'qgraph', 'reticulate', 'keras', 'rgl', 'glmnet'), repos='https://cran.rstudio.com', lib = drive_lib)
+```
+
 Download the [Rsafd.zip](https://carmona.princeton.edu/orf505/Rsafd.zip) file, extract the Rsafd folder, and upload the Rsafd folder to the Rlibs folder in your [Google Drive](https://drive.google.com/).
 
 ### Windows
