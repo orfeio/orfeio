@@ -12,17 +12,16 @@ Rsafd is an R package that provides statistical analysis of financial data.
 * TOC
 {:toc}
 
-## Semi-Automated Install
+## Semi-Automated macOS Install
 
-If you already have a conda installation, download the file corresponding to your architecture below.  
+If you already have a conda installation, [download this environment file](renv-spec-macm.txt).
 
 Use the command `conda create --name Renv --file <file_name>` to create the `Renv` conda environment, substituting the file's name and location for `<file_name>`.
 
-* [Mac (Apple Silicon)](renv-spec-macm.txt)
+<!-- * [Mac (Apple Silicon)](renv-spec-macm.txt) -->
 <!-- * [Mac (Intel)](renv-maci.txt) -->
-* [Windows (Intel)](renv-spec-win.txt)
-
-Continue with [step 8 for macOS](#step8mac) or [step 6 for Windows](#step6win) of the Manual Install.
+<!-- * [Windows (Intel)](renv-spec-win.txt) -->
+Once done, continue with [step 8 for macOS](#step8mac) <!-- or [step 6 for Windows](#step6win) --> of the Manual Install steps to complete the installation.
 
 ## Docker Container
 
@@ -114,30 +113,26 @@ Each time you wish to work with a Jupyter Notebook for the class, open the Termi
 
 ### Google Colab
 
-Paste each of the following commands into a new cell of a Google Colab notebook that is set to use the R runtime.
+Paste each of the following commands into a new cell of a Google Colab notebook.  Switch runtimes by clicking on the name of the current runtime (e.g., R, Python) in the lower-right corner of the window and clicking Change Runtime Type.
 
-The runtime is set under the Runtime menu by clicking on Change Runtime Type.
-
-1. Install the necessary R packages.
+1. From a Python runtime, mount your Google Drive.
+    ```
+    from google.colab import drive
+    drive.mount('/content/drive')
+    ```
+2. Switch to an R runtime and install Rsafd dependencies.
     ```
     install.packages(c('timeDate', 'quadprog', 'quantreg', 'plot3D', 'robustbase', 'scatterplot3d', 'splines', 'tseries', 'glasso', 'qgraph', 'reticulate', 'keras', 'rgl', 'glmnet'), repos='https://cran.rstudio.com')
     ```
-2. Download the Rsafd package.
-   ``` 
-   # Install remotes if not already installed
-   if(!require(remotes)) install.packages("remotes")
-
-    #  Install the package directly from GitHub
-    remotes::install_github("princetonuniversity/rsafd")
-   ```
-3. Decompress the Rsafd package.
-   ``` 
-   unzip('Rsafd.zip')
-   ```
-4. Install the Rsafd package.
-   ```
-   install.packages('Rsafd', repos = NULL, type = 'source')
-   ```
+3. Set up a persistent Rlibs library folder on Google Drive.
+    ```
+	drive_lib <- "/content/drive/MyDrive/Rlibs"
+	dir.create(drive_lib, showWarnings = FALSE, recursive = TRUE)
+	.libPaths(c(drive_lib, .libPaths()))
+	cat("Library paths:\n")
+	print(.libPaths())
+	```
+4. Download the [Rsafd.zip](https://carmona.princeton.edu/orf505/Rsafd.zip) file), extract the folder, and upload it to the Rlibs folder in your [Google Drive](https://drive.google.com/).
 
 ### Windows
 
