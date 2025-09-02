@@ -117,26 +117,22 @@ Each time you wish to work with a Jupyter Notebook for the class, open the Termi
 
 ### Google Colab
 
-Paste each of the following commands into a new cell of a Google Colab notebook.  Switch runtimes by clicking on the name of the current runtime (e.g., R, Python) in the lower-right corner of the window and clicking Change Runtime Type.
-
-1. From a Python runtime, mount your Google Drive.
+Each time you work with Google Colab (including the first time you install Rsafd) connect your Google Drive with this code from a Python runtime cell (change runtime using the icon in the lower-right corner).
     ```
     from google.colab import drive
     drive.mount('/content/drive')
     ```
-2. Switch to an R runtime and install Rsafd dependencies.
-    ```
-    install.packages(c('timeDate', 'quadprog', 'quantreg', 'plot3D', 'robustbase', 'scatterplot3d', 'splines', 'tseries', 'glasso', 'qgraph', 'reticulate', 'keras', 'rgl', 'glmnet'), repos='https://cran.rstudio.com')
-    ```
-3. Set up a persistent Rlibs library folder on Google Drive.
+Switch to an R runtime, and prepare the R environment, executing this code.
     ```
 	drive_lib <- "/content/drive/MyDrive/Rlibs"
 	dir.create(drive_lib, showWarnings = FALSE, recursive = TRUE)
 	.libPaths(c(drive_lib, .libPaths()))
-	cat("Library paths:\n")
-	print(.libPaths())
-	```
-4. Download the [Rsafd.zip](https://carmona.princeton.edu/orf505/Rsafd.zip) file, extract the Rsafd folder, and upload the Rsafd folder to the Rlibs folder in your [Google Drive](https://drive.google.com/).
+	``` 
+To install Rsafd the first time, run the following command in an R runtime cell to install the Rsafd dependencies.
+    ```
+    install.packages(c('timeDate', 'quadprog', 'quantreg', 'plot3D', 'robustbase', 'scatterplot3d', 'splines', 'tseries', 'glasso', 'qgraph', 'reticulate', 'keras', 'rgl', 'glmnet'), repos='https://cran.rstudio.com', lib = drive_lib)
+    ```
+Download the [Rsafd.zip](https://carmona.princeton.edu/orf505/Rsafd.zip) file, extract the Rsafd folder, and upload the Rsafd folder to the Rlibs folder in your [Google Drive](https://drive.google.com/).
 
 ### Windows
 
