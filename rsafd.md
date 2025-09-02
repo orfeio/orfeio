@@ -100,7 +100,7 @@ Paste each of the following commands into the Terminal app.  You can find the Te
     ```
 13. Install the Rsafd R package.
     ```
-    Rscript -e "install.packages('~/Downloads/Rsafd', repos = NULL, type='source')"
+    cp -r ~/Downloads/Rsafd ${CONDA_PREFIX}/lib/R/library
     ```
 14. Close Terminal.
 
@@ -193,7 +193,7 @@ Each of the remaining commands can be pasted into the Ubuntu app window.
     ```
 9. Install the Rsafd R package.
     ```
-    Rscript -e "install.packages('~/Rsafd', repos = NULL, type='source')"
+    cp -r ~/Rsafd ${CONDA_PREFIX}/lib/R/library
     ```
 10. Close the Ubuntu app.
 
