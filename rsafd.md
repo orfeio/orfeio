@@ -21,6 +21,10 @@ Use the command `conda create --name Renv --file <file_name>` to create the `Ren
 <!-- * [Mac (Apple Silicon)](renv-spec-macm.txt) -->
 <!-- * [Mac (Intel)](renv-maci.txt) -->
 <!-- * [Windows (Intel)](renv-spec-win.txt) -->
+
+{: .note }
+This method assumes a device with Apple Silicon (M1 processor or later, introduced Nov 2020).  For old Intel-based devices, please use the manual installation steps or an alternative.
+
 Once done, continue with [step 8 for macOS](#step8mac) <!-- or [step 6 for Windows](#step6win) --> of the Manual Install steps to complete the installation.
 
 ## Docker Container
