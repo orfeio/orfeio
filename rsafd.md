@@ -132,7 +132,7 @@ Paste each of the following commands into a new cell of a Google Colab notebook.
 	cat("Library paths:\n")
 	print(.libPaths())
 	```
-4. Download the [Rsafd.zip](https://carmona.princeton.edu/orf505/Rsafd.zip) file), extract the folder, and upload it to the Rlibs folder in your [Google Drive](https://drive.google.com/).
+4. Download the [Rsafd.zip](https://carmona.princeton.edu/orf505/Rsafd.zip) file, extract the Rsafd folder, and upload the Rsafd folder to the Rlibs folder in your [Google Drive](https://drive.google.com/).
 
 ### Windows
 
