@@ -33,7 +33,7 @@ If you have an installation of [Docker Desktop](https://docs.docker.com/desktop/
 
 Open Docker Desktop and run the command appropriate for your platform in the Docker Desktop Terminal window.
 
-### macOS / Linux
+### macOS 
 ```
 docker run -p 8888:8888 -e JUPYTER_LINK_ONLY=1 -v "$HOME":/workspace/notebooks ghcr.io/princetonuniversity/rsafd-docker:latest
 ```
@@ -41,6 +41,12 @@ docker run -p 8888:8888 -e JUPYTER_LINK_ONLY=1 -v "$HOME":/workspace/notebooks g
 ```
 docker run -p 8888:8888 -e JUPYTER_LINK_ONLY=1 -v "${env:USERPROFILE}:/workspace/notebooks" ghcr.io/princetonuniversity/rsafd-docker:latest
 ```
+
+### Linux
+```
+docker run -p 8888:8888 -e JUPYTER_LINK_ONLY=1 --user $(id -u):$(id -g) -v "$HOME":/workspace/notebooks -e HOME=/workspace/notebooks --workdir /workspace/notebooks ghcr.io/princetonuniversity/rsafd-docker:latest
+```
+
 Open the printed URL in your browser to begin working with notebooks; see [the README](https://github.com/princetonuniversity/rsafd-docker#rsafd-docker) for further details.
 
 ## Manual Install 
