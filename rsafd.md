@@ -92,7 +92,7 @@ Paste each of the following commands into the Terminal app.  You can find the Te
     ```
 11. Download the Rsafd R package.
     ```
-    curl -LO $(curl -sL https://api.github.com/repos/PrincetonUniversity/Rsafd/releases/latest | jq -r '.assets[] | select(.name == "Rsafd.zip") | .browser_download_url')
+    curl -sL $(curl -sL https://api.github.com/repos/PrincetonUniversity/Rsafd/releases/latest | jq -r '.assets[] | select(.name == "Rsafd.zip") | .browser_download_url') -o ~/Downloads/Rsafd.zip
     ```
 12. Decompress the Rsafd R package.
     ```
@@ -189,7 +189,7 @@ Each of the remaining commands can be pasted into the Ubuntu app window.
     ```
 8. Download and extract the Rsafd R package.
     ```
-    curl -LO $(curl -sL https://api.github.com/repos/PrincetonUniversity/Rsafd/releases/latest | jq -r '.assets[] | select(.name == "Rsafd.zip") | .browser_download_url') ; unzip -o ~/Rsafd.zip -d ~
+    curl -sL $(curl -sL https://api.github.com/repos/PrincetonUniversity/Rsafd/releases/latest | jq -r '.assets[] | select(.name == "Rsafd.zip") | .browser_download_url') -o ~/Downloads/Rsafd.zip ; unzip -o ~/Rsafd.zip -d ~
     ```
 9. Install the Rsafd R package.
     ```
