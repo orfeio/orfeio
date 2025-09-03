@@ -59,7 +59,7 @@ All commands are executed from Terminal.
     ```
 2. [Download the R environment file](renv-spec-macm.txt) and use it to create the `Renv` environment.
     ```
-    conda env create -n Renv -f renv-spec-macm.txt
+    conda create -n Renv --file renv-spec-macm.txt
     ```
 3. Activate the environment and install the necessary R packages.
     ```
