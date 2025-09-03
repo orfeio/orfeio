@@ -51,7 +51,7 @@ Local installation utilizes a [conda environment](https://docs.conda.io/projects
 
 ### macOS
 
-All commands are executed from Terminal.
+All commands are executed from Terminal and assume an existing installation of conda.  [Install Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/install) if you do not have this command available.
 
 1. Install the Apple Developer Command Line Tools.
     ```
