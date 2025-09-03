@@ -31,7 +31,7 @@ Multiple steps require switching the runtime between Python and R; switch the ru
     ```
 3. [Download the Rsafd R package](https://github.com/PrincetonUniversity/Rsafd/releases/download/v20250902002429/Rsafd.zip), decompress, and install by copying the Rsafd folder to the Rlibs folder in your [Google Drive](https://drive.google.com/).
 
-Each time you wish to work with a Colab Notebook and run `library(Rsafd)`, run the following commands.
+Each time you wish to work with a Colab Notebook and run `library(Rsafd)`, run the following commands first.
 
 1. Switch to a Python runtime and reconnect your Google Drive.
     ```
@@ -139,7 +139,7 @@ Each of the remaining commands can be pasted into the Ubuntu app window.
     ```
 10. Close the Ubuntu app.
 
-Each time you wish to work with a Jupyter Notebook, open the Ubuntu app and then run the following commands.
+Each time you wish to work with a Jupyter Notebook and load the library with`library(Rsafd)`, open the Ubuntu app and then run the following commands first.
 
 1. Activate the Renv conda environment.
     ```
