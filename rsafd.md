@@ -26,7 +26,7 @@ Rsafd is an R package that provides statistical analysis of financial data.
     .libPaths(c(drive_lib, .libPaths()))
     install.packages(c('timeDate', 'quadprog', 'quantreg', 'plot3D', 'robustbase', 'scatterplot3d', 'splines', 'tseries', 'glasso', 'qgraph', 'reticulate', 'keras', 'rgl', 'glmnet'), repos='https://cran.rstudio.com', lib = drive_lib)
     ```
-3. [Download the Rsafd R package](https://github.com/PrincetonUniversity/Rsafd/releases/download/v20250902002429/Rsafd.zip), decompress, and install the Rsafd R package by copying it to the Rlibs folder in your [Google Drive](https://drive.google.com/).
+3. [Download the Rsafd R package](https://github.com/PrincetonUniversity/Rsafd/releases/download/v20250902002429/Rsafd.zip), decompress, and install by copying the Rsafd folder to the Rlibs folder in your [Google Drive](https://drive.google.com/).
 
 Each time you wish to work with a Colab Notebook for the class, run the following commands.
 
@@ -40,7 +40,6 @@ Each time you wish to work with a Colab Notebook for the class, run the followin
     drive_lib <- "/content/drive/MyDrive/Rlibs"
     dir.create(drive_lib, showWarnings = FALSE, recursive = TRUE)
     .libPaths(c(drive_lib, .libPaths()))
-    library(Rsafd)
     ```
 
 ## Local Install 
@@ -55,7 +54,7 @@ All commands are executed from Terminal.
     ```
     xcode-select --install
     ```
-2. [Download the R environment file](renv-spec-macm.txt) use it to create the `Renv` environment.
+2. [Download the R environment file](renv-spec-macm.txt) and use it to create the `Renv` environment.
     ```
     conda env create -f renv-spec-macm.txt
     ```
@@ -147,8 +146,7 @@ Each time you wish to work with a Jupyter Notebook for the class, open the Ubunt
     ```
     jupyter notebook
     ```
-3. Visit the [Jupyter web interface](http://localhost:8888/tree).
-   
+ 
 Note that for files and folders to be accessible to Jupyter, you will need to copy them to the Linux disk that appears along the left side of the File Explorer window.
 
 ## Docker Container
