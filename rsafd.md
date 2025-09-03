@@ -14,7 +14,7 @@ Rsafd is an R package that provides statistical analysis of financial data.
 
 ### Google Colab
 
-When a step requires switching the runtime, you may do so from the Change Runtime Type option on the Runtime menu. 
+Multiple steps require switching the runtime; switch runtime from the Change Runtime Type option on the Runtime menu. 
 
 1. Switch to a Python runtime, then execute the following code to connect your Google Drive.
     ```
