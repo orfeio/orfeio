@@ -12,97 +12,65 @@ Rsafd is an R package that provides statistical analysis of financial data.
 * TOC
 {:toc}
 
-## Semi-Automated macOS Install
+### Google Colab
 
-If you already have a conda installation, [download this environment file](renv-spec-macm.txt).
+1. Switch to a Python runtime, then execute the following code to connect your Google Drive.
+    ```
+    from google.colab import drive
+    drive.mount('/content/drive')
+    ```
+2. Switch to an R runtime, then execute the following code to install the Rsafd dependencies.
+    ```
+    drive_lib <- "/content/drive/MyDrive/Rlibs"
+    dir.create(drive_lib, showWarnings = FALSE, recursive = TRUE)
+    .libPaths(c(drive_lib, .libPaths()))
+    install.packages(c('timeDate', 'quadprog', 'quantreg', 'plot3D', 'robustbase', 'scatterplot3d', 'splines', 'tseries', 'glasso', 'qgraph', 'reticulate', 'keras', 'rgl', 'glmnet'), repos='https://cran.rstudio.com', lib = drive_lib)
+    ```
+3. [Download the Rsafd R package](https://github.com/PrincetonUniversity/Rsafd/releases/download/v20250902002429/Rsafd.zip), decompress, and install the Rsafd R package by copying it to the Rlibs folder in your [Google Drive](https://drive.google.com/).
 
-Use the command `conda create --name Renv --file <file_name>` to create the `Renv` conda environment, substituting the file's name and location for `<file_name>`.
+Each time you wish to work with a Colab Notebook for the class, run the following commands.
 
-<!-- * [Mac (Apple Silicon)](renv-spec-macm.txt) -->
-<!-- * [Mac (Intel)](renv-maci.txt) -->
-<!-- * [Windows (Intel)](renv-spec-win.txt) -->
+1. Switch to a Python runtime and reconnect your Google Drive.
+    ```
+    from google.colab import drive
+    drive.mount('/content/drive')
+    ```
+2. Switch to an R runtime and load the library.
+    ```
+    drive_lib <- "/content/drive/MyDrive/Rlibs"
+    dir.create(drive_lib, showWarnings = FALSE, recursive = TRUE)
+    .libPaths(c(drive_lib, .libPaths()))
+    library(Rsafd)
+    ```
 
-{: .note }
-This method assumes a device with Apple Silicon (M1 processor or later, introduced Nov 2020).  For older Intel-based devices, please use the manual installation steps or an alternative.
+## Local Install 
 
-Once done, continue with [step 8 for macOS](#step8mac) <!-- or [step 6 for Windows](#step6win) --> of the Manual Install steps to complete the installation.
-
-## Docker Container
-
-If you have an installation of [Docker Desktop](https://docs.docker.com/desktop/), [a pre-built Docker image](https://github.com/princetonuniversity/rsafd-docker) is available that includes Python, R, [Rsafd](https://github.com/princetonuniversity/rsafd), dependencies, and Jupyter.
-
-Open Docker Desktop and run the command appropriate for your platform in the Docker Desktop Terminal window.
-
-### macOS 
-```
-docker run -p 8888:8888 -e JUPYTER_LINK_ONLY=1 -v "$HOME":/workspace/notebooks ghcr.io/princetonuniversity/rsafd-docker:latest
-```
-### Windows (PowerShell)
-```
-docker run -p 8888:8888 -e JUPYTER_LINK_ONLY=1 -v "${env:USERPROFILE}:/workspace/notebooks" ghcr.io/princetonuniversity/rsafd-docker:latest
-```
-
-### Linux
-```
-docker run -p 8888:8888 -e JUPYTER_LINK_ONLY=1 --user $(id -u):$(id -g) -v "$HOME":/workspace/notebooks -e HOME=/workspace/notebooks --workdir /workspace/notebooks ghcr.io/princetonuniversity/rsafd-docker:latest
-```
-
-Open the printed URL in your browser to begin working with notebooks; see [the README](https://github.com/princetonuniversity/rsafd-docker#rsafd-docker) for further details.
-
-## Manual Install 
-
-The manual installation is native to your operating system and based on a [conda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
+Local installation utilizes a [conda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html). 
 
 ### macOS
 
-Paste each of the following commands into the Terminal app.  You can find the Terminal app inside the Utilities folder found within the Applications folder, or search for "Terminal".
+All commands are executed from Terminal.
 
 1. Install the Apple Developer Command Line Tools.
     ```
     xcode-select --install
     ```
-2. Download Miniconda.
+2. [Download the R environment file](renv-spec-macm.txt) use it to create the `Renv` environment.
     ```
-    curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-`uname -m`.sh -o ~/Downloads/miniconda.sh
+    conda env create -f renv-spec-macm.txt
     ```
-3. Install Miniconda.
-    ```
-    chmod +x ~/Downloads/miniconda.sh ; ~/Downloads/miniconda.sh -bu
-    ```
-4. Initialize Miniconda.
-    ```
-    ~/miniconda3/bin/conda init bash ; ~/miniconda3/bin/conda init zsh
-    ```
-5. Close and re-open the Terminal.
-6. Configure the conda command to prioritize the Apple channel first, the Conda Forge channel second.
-    ```
-    conda config --add channels conda-forge --add channels apple
-    ```
-7. Create a conda environment named Renv.
-    ```
-    conda create -y -n Renv tensorflow keras jupyter r-irkernel r-hmisc
-    ```
-8. <a name="step8mac"></a>Activate the Renv environment.
+3. Activate the environment and install the necessary R packages.
     ```
     conda activate Renv
-    ```
-10. Install the necessary R packages.
-    ```
     Rscript -e "install.packages(c('timeDate', 'quadprog', 'quantreg', 'plot3D', 'robustbase', 'scatterplot3d', 'splines', 'tseries', 'glasso', 'qgraph', 'reticulate', 'keras', 'rgl', 'glmnet'), repos='https://cran.rstudio.com')"
     ```
-11. Download the Rsafd R package.
+4. Download, decompress, and install the Rsafd R package.
     ```
     curl -sL $(curl -sL https://api.github.com/repos/PrincetonUniversity/Rsafd/releases/latest | jq -r '.assets[] | select(.name == "Rsafd.zip") | .browser_download_url') -o ~/Downloads/Rsafd.zip
-    ```
-12. Decompress the Rsafd R package.
-    ```
     unzip -o ~/Downloads/Rsafd.zip -d ~/Downloads/Rsafd
-    ```
-13. Install the Rsafd R package.
-    ```
     cp -r ~/Downloads/Rsafd ${CONDA_PREFIX}/lib/R/library
     ```
-14. Close Terminal.
+5. Close Terminal.
 
 Each time you wish to work with a Jupyter Notebook for the class, open the Terminal app and then run the following commands.
 
@@ -110,38 +78,10 @@ Each time you wish to work with a Jupyter Notebook for the class, open the Termi
     ```
     conda activate Renv
     ```
-
-    {: .warning }
-    If you have a previously-installed version of Anaconda, you may need to use the following to activate the environment.
-
-   `conda activate $HOME/miniconda3/envs/Renv`
-
 2. Open Jupyter.
    ``` 
    jupyter notebook
    ```
-
-### Google Colab
-
-Each time you work with Google Colab (including the first time you install Rsafd) connect your Google Drive with this code from a Python runtime cell (change runtime using the icon in the lower-right corner).
-```
-from google.colab import drive
-drive.mount('/content/drive')
-```
-
-Switch to an R runtime, and prepare the R environment, executing this code.
-```
-drive_lib <- "/content/drive/MyDrive/Rlibs"
-dir.create(drive_lib, showWarnings = FALSE, recursive = TRUE)
-.libPaths(c(drive_lib, .libPaths()))
-``` 
-
-To install Rsafd the first time, run the following command in an R runtime cell to install the Rsafd dependencies.
-```
-install.packages(c('timeDate', 'quadprog', 'quantreg', 'plot3D', 'robustbase', 'scatterplot3d', 'splines', 'tseries', 'glasso', 'qgraph', 'reticulate', 'keras', 'rgl', 'glmnet'), repos='https://cran.rstudio.com', lib = drive_lib)
-```
-
-Download the [Rsafd.zip](https://carmona.princeton.edu/orf505/Rsafd.zip) file, extract the Rsafd folder, and upload the Rsafd folder to the Rlibs folder in your [Google Drive](https://drive.google.com/).
 
 ### Windows
 
@@ -210,4 +150,28 @@ Each time you wish to work with a Jupyter Notebook for the class, open the Ubunt
 3. Visit the [Jupyter web interface](http://localhost:8888/tree).
    
 Note that for files and folders to be accessible to Jupyter, you will need to copy them to the Linux disk that appears along the left side of the File Explorer window.
+
+
+
+## Docker Container
+
+If you have an installation of [Docker Desktop](https://docs.docker.com/desktop/), [a pre-built Docker image](https://github.com/princetonuniversity/rsafd-docker) is available that includes Python, R, [Rsafd](https://github.com/princetonuniversity/rsafd), dependencies, and Jupyter.
+
+Open Docker Desktop and run the command appropriate for your platform in the Docker Desktop Terminal window.
+
+### macOS 
+```
+docker run -p 8888:8888 -e JUPYTER_LINK_ONLY=1 -v "$HOME":/workspace/notebooks ghcr.io/princetonuniversity/rsafd-docker:latest
+```
+### Windows (PowerShell)
+```
+docker run -p 8888:8888 -e JUPYTER_LINK_ONLY=1 -v "${env:USERPROFILE}:/workspace/notebooks" ghcr.io/princetonuniversity/rsafd-docker:latest
+```
+
+### Linux
+```
+docker run -p 8888:8888 -e JUPYTER_LINK_ONLY=1 --user $(id -u):$(id -g) -v "$HOME":/workspace/notebooks -e HOME=/workspace/notebooks --workdir /workspace/notebooks ghcr.io/princetonuniversity/rsafd-docker:latest
+```
+
+Open the printed URL in your browser to begin working with notebooks; see [the README](https://github.com/princetonuniversity/rsafd-docker#rsafd-docker) for further details.
 
