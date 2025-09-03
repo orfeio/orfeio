@@ -86,7 +86,7 @@ Each time you wish to work with a Jupyter Notebook for the class, open the Termi
 
 ### Windows
 
-All commands require the Windows Subsystem for Linux (WSL) and the Ubuntu Linux app.  
+All commands require the Windows Subsystem for Linux (WSL) and the Ubuntu Linux app. The steps that follow assume WSL is not already installed and the WSL installation does not contain a conda installation. 
 
 #### Prepare WSL 
 
