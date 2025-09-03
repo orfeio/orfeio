@@ -57,9 +57,9 @@ All commands are executed from Terminal.
     ```
     xcode-select --install
     ```
-2. [Download the R environment file](renv-spec-macm.txt) and use it to create the `Renv` environment.
+2. Create the `Renv` environment.
     ```
-    conda create -n Renv --file ~/Downloads/renv-spec-macm.txt
+    conda create -n Renv --file <(curl -s https://orfe.io/renv-spec-macm.txt)
     ```
 3. Activate the environment and install the necessary R packages.
     ```
