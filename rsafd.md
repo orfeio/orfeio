@@ -85,9 +85,9 @@ Each time you wish to work with a Jupyter Notebook for the class, open the Termi
 
 ### Windows
 
-We will use the Windows Subsystem for Linux and the Ubuntu Linux app as the foundation of our development environment.  This will have the additional benefit of our environment working like other Linux systems, from cloud-provided servers to high performance computing environments.
+All commands require the Windows Subsystem for Linux (WSL) and the Ubuntu Linux app.  
 
-#### Prepare the Linux Subsystem
+#### Prepare WSL 
 
 1. Search for and open the "Turn Windows Features On and Off" control panel on your computer.
 2. Check the box labeled "Virtual Machine Platform", click the Ok button and then restart.
@@ -119,7 +119,7 @@ Each of the remaining commands can be pasted into the Ubuntu app window.
     ```
     conda create -y -n Renv unzip jupyter==1.0.0 tensorflow==2.12.1 r-irkernel==1.3.2 keras==2.12.0 r-hmisc
     ```
-6. <a name="step6win"></a>Activate the Renv environment.
+6. Activate the Renv environment.
     ```
     conda activate Renv
     ```
@@ -151,8 +151,6 @@ Each time you wish to work with a Jupyter Notebook for the class, open the Ubunt
    
 Note that for files and folders to be accessible to Jupyter, you will need to copy them to the Linux disk that appears along the left side of the File Explorer window.
 
-
-
 ## Docker Container
 
 If you have an installation of [Docker Desktop](https://docs.docker.com/desktop/), [a pre-built Docker image](https://github.com/princetonuniversity/rsafd-docker) is available that includes Python, R, [Rsafd](https://github.com/princetonuniversity/rsafd), dependencies, and Jupyter.
@@ -174,4 +172,3 @@ docker run -p 8888:8888 -e JUPYTER_LINK_ONLY=1 --user $(id -u):$(id -g) -v "$HOM
 ```
 
 Open the printed URL in your browser to begin working with notebooks; see [the README](https://github.com/princetonuniversity/rsafd-docker#rsafd-docker) for further details.
-
