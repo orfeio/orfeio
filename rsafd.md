@@ -158,7 +158,7 @@ If you have an installation of [Docker Desktop](https://docs.docker.com/desktop/
 Open Docker Desktop and run the command appropriate for your platform in the Docker Desktop Terminal window.
 
 {: .warning }
-If you receive a "Dead Kernel" message when attempting to load large datasets, you may need to adjust Docker Desktop's memory allocation.  See the [Troubleshooting section](https://github.com/princetonuniversity/rsafd-docker#troubleshooting for more details. 
+If you receive a "Dead Kernel" message when attempting to load large datasets, you may need to adjust Docker Desktop's memory allocation.  See the [Troubleshooting section](https://github.com/princetonuniversity/rsafd-docker#troubleshooting) for more details. 
 
 ### macOS 
 ```
