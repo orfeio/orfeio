@@ -131,7 +131,7 @@ Each of the remaining commands can be pasted into the Ubuntu app window.
     ```
 8. Download and extract the Rsafd R package.
     ```
-    curl -sL $(curl -sL https://api.github.com/repos/PrincetonUniversity/Rsafd/releases/latest | jq -r '.assets[] | select(.name == "Rsafd.zip") | .browser_download_url') -o ~/Downloads/Rsafd.zip ; unzip -o ~/Rsafd.zip -d ~/Rsafd
+    curl -sL $(curl -sL https://api.github.com/repos/PrincetonUniversity/Rsafd/releases/latest | jq -r '.assets[] | select(.name == "Rsafd.zip") | .browser_download_url') -o ~/Rsafd.zip ; unzip -o ~/Rsafd.zip -d ~/Rsafd
     ```
 9. Install the Rsafd R package.
     ```
