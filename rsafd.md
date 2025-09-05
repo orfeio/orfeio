@@ -119,7 +119,7 @@ Each of the remaining commands can be pasted into the Ubuntu app window.
     ```
 5. Create a conda environment named `Renv`.
     ```
-    conda create -y -n Renv unzip jupyter==1.0.0 tensorflow==2.12.1 r-irkernel==1.3.2 keras==2.12.0 r-hmisc
+    conda create -y -n Renv jq unzip jupyter==1.0.0 tensorflow==2.12.1 r-irkernel==1.3.2 keras==2.12.0 r-hmisc
     ```
 6. Activate the Renv environment.
     ```
