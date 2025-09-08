@@ -27,11 +27,15 @@ Paste each of the following commands into the Terminal app[^term] to download St
     ```
     ~/miniconda3/bin/conda init bash ; ~/miniconda3/bin/conda init zsh
     ```
-5. Configure the conda command to prioritize the Astropy channel first, the Apple channel second, and the Conda Forge channel third.
+5. Accept the Terms of Service (TOS).
+   ```
+   conda tos accept
+   ```
+6. Configure the conda command to prioritize the Astropy channel first, the Apple channel second, and the Conda Forge channel third.
     ```
     conda config --add channels conda-forge --add channels apple --add channels astropy
     ```
-6. Create a conda environment named `BobsAstro`.
+7. Create a conda environment named `BobsAstro`.
     ```
     conda create -n BobsAstro astropy astroquery scipy matplotlib wxpython opencv pyqt imageio -y
     ```
@@ -71,19 +75,23 @@ Each time you wish to work with and run StackImages, open the Terminal and then 
     ```
     conda config --add channels conda-forge --add channels astropy
     ```
-4. Create a conda environment named `BobsAstro`.
+6. Accept the Terms of Service (TOS).
+   ```
+   conda tos accept
+   ```
+7. Create a conda environment named `BobsAstro`.
     ```
     conda create -n BobsAstro astropy astroquery scipy matplotlib wxpython pyqt imageio -y
     ```
-5. Activate the `BobsAstro` conda environment.
+8. Activate the `BobsAstro` conda environment.
    ```
    conda activate BobsAstro
    ```
-6. Install the `opencv` module via the `pip` command.[^cv2issue]
+9. Install the `opencv` module via the `pip` command.[^cv2issue]
    ```
    pip install opencv-contrib-python
    ```
-5. Close the Anaconda Prompt.
+10. Close the Anaconda Prompt.
 
 In order to use StackImages with astro images, use the included GetFit python program to download them.
 
