@@ -345,3 +345,4 @@ https://conda.anaconda.org/conda-forge/noarch/r-irkernel-1.3.2-r44h785f33e_2.con
 https://conda.anaconda.org/conda-forge/noarch/r-viridis-0.6.5-r44hc72bb7e_1.conda
 https://conda.anaconda.org/conda-forge/noarch/r-htmltable-2.4.3-r44hc72bb7e_0.conda
 https://conda.anaconda.org/conda-forge/osx-arm64/r-hmisc-5.2_3-r44he0ea626_0.conda
+https://conda.anaconda.org/conda-forge/osx-arm64/jq-1.8.1-hbc156a2_0.conda
