@@ -45,7 +45,7 @@ Paste each of the following commands into the Terminal app[^term] to download St
     ```
 7. Create a conda environment named `BobsAstro`.
     ```
-    conda create -n BobsAstro astropy astroquery scipy==1.1.2 matplotlib wxpython opencv pyqt qt=5 imageio -y
+    conda create -n BobsAstro astropy astroquery scipy==1.11.2 matplotlib wxpython opencv pyqt qt=5 imageio -y
     ```
 
 In order to use StackImages with astro images, use the included GetFit python program to download them.
