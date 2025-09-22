@@ -12,7 +12,7 @@ StackImages is a Python script and graphical interface for astrophotography imag
 If you are instructed to update the software after installation, do so by running the following command, which will overwrite the StackImages files with the latest versions posted to the server.
 
 ```
-curl -L https://vanderbei.princeton.edu/tmp/PyWin.tar -o $HOME/Downloads/StackImages.tar && tar -xvkf $HOME/Downloads/StackImages.tar --unlink -C $HOME/Downloads/StackImages --strip-components=1 --exclude='._*’
+curl -L https://vanderbei.princeton.edu/tmp/PyWin.tar -o $HOME/Downloads/StackImages.tar && tar -xvkf $HOME/Downloads/StackImages.tar --unlink -C $HOME/Downloads/StackImages --strip-components=1 --exclude='._*'
 ```
 
 ## macOS
