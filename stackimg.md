@@ -77,6 +77,16 @@ Each time you wish to work with and run StackImages, open the Terminal and then 
 
 ## Windows
 
+### Update the Software
+
+If you are instructed to update the software after installation, do so by running the following command, which will overwrite the StackImages files with the latest versions posted to the server.
+
+```
+curl -L https://vanderbei.princeton.edu/tmp/PyWin.tar -o %USERPROFILE%/Downloads/StackImages.tar && tar -xvkf %USERPROFILE%/Downloads/StackImages.tar --unlink -C %USERPROFILE%/Downloads/StackImages --strip-components=1 --exclude='._*'
+```
+
+### Installation
+
 1. [Download and install Miniconda](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe).
 2. Open the Anaconda Prompt (Miniconda3) by finding it within the Windows (logo) Menu or by searching for it by name.
 3. Download and extract StackImages.
