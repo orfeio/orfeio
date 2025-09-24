@@ -103,18 +103,14 @@ curl -L https://vanderbei.princeton.edu/tmp/PyWin.tar -o %USERPROFILE%/Downloads
    ```
 7. Create a conda environment named `BobsAstro`.
     ```
-    conda create -n BobsAstro astropy astroquery scipy==1.11.2 matplotlib wxpython pyqt qt=5 imageio -y
+    conda create -n BobsAstro astropy astroquery scipy==1.11.2 numpy scipy opencv matplotlib wxpython pyqt qt=5 imageio -y
 
     ```
 8. Activate the `BobsAstro` conda environment.
    ```
    conda activate BobsAstro
    ```
-9. Install the `opencv` module via the `pip` command.[^cv2issue]
-   ```
-   pip install opencv-contrib-python
-   ```
-10. Close the Anaconda Prompt.
+9. Close the Anaconda Prompt.[^cv2issue]
 
 In order to use StackImages with astro images, use the included GetFit python program to download them.
 
@@ -139,4 +135,4 @@ Each time you wish to work with and run StackImages, open the Anaconda Prompt (M
     ```
 
 [^term]: You can find the Terminal app inside the Utilities folder found within the Applications folder, or search for "Terminal".
-[^cv2issue]: On Windows as of this writing, the `opencv` package will install via `conda` but then fails on import with an ImportError, indicating a DLL is not found.  Rather than address the issue directly, we install the extra dependency via `pip`.
+[^cv2issue]: On Windows as of this writing, there is an unidentified issue with the `opencv` package.  It may be installed via `conda` but then fail on import with an ImportError, indicating a DLL is not found.  The cause of this issue remains unresolved; there may be some remedy installing `opencv` via `pip`.
