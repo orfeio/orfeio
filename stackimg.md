@@ -7,7 +7,11 @@ layout: default
 
 StackImages is a Python script and graphical interface for astrophotography image integration.
 
-## Update the Software
+
+
+## macOS
+
+### Update the Software
 
 If you are instructed to update the software after installation, do so by running the following command, which will overwrite the StackImages files with the latest versions posted to the server.
 
@@ -15,7 +19,7 @@ If you are instructed to update the software after installation, do so by runnin
 curl -L https://vanderbei.princeton.edu/tmp/PyWin.tar -o $HOME/Downloads/StackImages.tar && tar -xvkf $HOME/Downloads/StackImages.tar --unlink -C $HOME/Downloads/StackImages --strip-components=1 --exclude='._*'
 ```
 
-## macOS
+### Installation
 
 Paste each of the following commands into the Terminal app[^term] to download StackImages and prepare your device to run it.
 
