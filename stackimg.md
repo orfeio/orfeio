@@ -82,7 +82,7 @@ Each time you wish to work with and run StackImages, open the Terminal and then 
 If you are instructed to update the software after installation, do so by running the following command, which will overwrite the StackImages files with the latest versions posted to the server.
 
 ```
-curl --noproxy "*" https://vanderbei.princeton.edu/tmp/PyWin.tar -o %USERPROFILE%/Downloads/StackImages.tar
+curl -L https://vanderbei.princeton.edu/tmp/PyWin.tar -o %USERPROFILE%/Downloads/StackImages.tar
 tar -xvkf %USERPROFILE%/Downloads/StackImages.tar --unlink -C %USERPROFILE%/Downloads/StackImages --strip-components=1 --exclude='._*'
 ```
 
