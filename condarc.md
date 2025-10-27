@@ -23,7 +23,10 @@ You may also repeat these steps if you'd like to start over as if it is your fir
     ```
     PU_TIMESTMP=(`date '+%b_%d_%Y_%H%M%S'`); [ -d $HOME/.conda ] && mv $HOME/.conda $HOME/conda-backup-$PU_TIMESTMP; [ -f $HOME/.condarc ] && mv $HOME/.condarc $HOME/condarc-backup-$PU_TIMESTMP
     ```
-    
+
+    {: .warning }
+    If run on Della, this command will attempt to set up a location outside of a research group or PI directory.
+
 3. Configure `conda` to store both its package cache and environments in a location other than your `$HOME`.[^quota]  In addition, prioritize the `conda-forge` channel for software installations by default.  With this example command, we write the necessary configuration changes to a new `$HOME/.condarc` file.
     
     ```
