@@ -135,5 +135,12 @@ Each time you wish to work with and run StackImages, open the Anaconda Prompt (M
     pythonw %USERPROFILE%\Downloads\StackImages\StackImages.py
     ```
 
+## Remove the Conda Environment
+
+Remove the conda environment and optionally recreate the it for any reason (starting from Step 7).
+   ```
+   conda env remove -n BobsAstro
+   ```
+
 [^term]: You can find the Terminal app inside the Utilities folder found within the Applications folder, or search for "Terminal".
 [^cv2issue]: On Windows as of this writing, there is an unidentified issue with the `opencv` package.  It may be installed via `conda` but then fail on import with an ImportError, indicating a DLL is not found.  The cause of this issue remains unresolved; there may be some remedy installing `opencv` via `pip`.
