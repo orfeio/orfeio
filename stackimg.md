@@ -20,7 +20,7 @@ Paste each command into the Terminal app.[^term]
 
 1. Download and extract StackImages.
    ```
-   curl -L https://vanderbei.princeton.edu/tmp/PyWin.tar -o $HOME/Downloads/StackImages.tar && mkdir -p $HOME/Downloads/StackImages && tar -xvf $HOME/Downloads/StackImages.tar --directory=$HOME/Downloads/StackImages --strip-components=1 PyWin
+   curl -fL https://github.com/PrincetonUniversity/StackImages/releases/latest/download/PyWin.tar -o $HOME/Downloads/StackImages.tar && mkdir -p $HOME/Downloads/StackImages && tar -xvf $HOME/Downloads/StackImages.tar --directory=$HOME/Downloads/StackImages --strip-components=1 PyWin
    ```
 2. Download and install Miniconda.
    ```
@@ -50,10 +50,10 @@ pythonw $HOME/Downloads/StackImages/StackImages.py
 
 ### Updating
 
-When told to update, run this to replace the StackImages files with the latest version on the server.
+When told to update, run this to replace the StackImages files with the latest release.
 
 ```
-curl -L https://vanderbei.princeton.edu/tmp/PyWin.tar -o $HOME/Downloads/StackImages.tar && tar -xvkf $HOME/Downloads/StackImages.tar --unlink -C $HOME/Downloads/StackImages --strip-components=1 --exclude='._*'
+curl -fL https://github.com/PrincetonUniversity/StackImages/releases/latest/download/PyWin.tar -o $HOME/Downloads/StackImages.tar && tar -xvkf $HOME/Downloads/StackImages.tar --unlink -C $HOME/Downloads/StackImages --strip-components=1 --exclude='._*'
 ```
 
 ## Windows
@@ -63,7 +63,7 @@ curl -L https://vanderbei.princeton.edu/tmp/PyWin.tar -o $HOME/Downloads/StackIm
 1. [Download and install Miniconda](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe), then open **Anaconda Prompt (Miniconda3)** from the Start menu. Paste each command below into it.
 2. Download and extract StackImages.
    ```
-   curl --noproxy "*" https://vanderbei.princeton.edu/tmp/PyWin.tar -o %USERPROFILE%\Downloads\StackImages.tar && IF NOT EXIST %USERPROFILE%\Downloads\StackImages mkdir %USERPROFILE%\Downloads\StackImages && tar -xvf %USERPROFILE%\Downloads\StackImages.tar --directory=%USERPROFILE%\Downloads\StackImages --strip-components=1 PyWin
+   curl -fL --noproxy "*" https://github.com/PrincetonUniversity/StackImages/releases/latest/download/PyWin.tar -o %USERPROFILE%\Downloads\StackImages.tar && IF NOT EXIST %USERPROFILE%\Downloads\StackImages mkdir %USERPROFILE%\Downloads\StackImages && tar -xvf %USERPROFILE%\Downloads\StackImages.tar --directory=%USERPROFILE%\Downloads\StackImages --strip-components=1 PyWin
    ```
 3. Accept the Terms of Service, set the channels (astropy, then conda-forge) and create the `BobsAstro` environment. OpenCV comes from pip, because conda's `opencv` fails to import on Windows.
    ```
@@ -86,10 +86,10 @@ pythonw %USERPROFILE%\Downloads\StackImages\StackImages.py
 
 ### Updating
 
-When told to update, run this to replace the StackImages files with the latest version on the server.
+When told to update, run this to replace the StackImages files with the latest release.
 
 ```
-curl --noproxy "*" https://vanderbei.princeton.edu/tmp/PyWin.tar -o %USERPROFILE%\Downloads\StackImages.tar && tar -xvkf %USERPROFILE%\Downloads\StackImages.tar --unlink -C %USERPROFILE%\Downloads\StackImages --strip-components=1 --exclude=._*
+curl -fL --noproxy "*" https://github.com/PrincetonUniversity/StackImages/releases/latest/download/PyWin.tar -o %USERPROFILE%\Downloads\StackImages.tar && tar -xvkf %USERPROFILE%\Downloads\StackImages.tar --unlink -C %USERPROFILE%\Downloads\StackImages --strip-components=1 --exclude=._*
 ```
 
 ## Start Over
