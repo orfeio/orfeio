@@ -1,146 +1,103 @@
 ---
 title: StackImages
-layout: default 
+layout: default
 ---
 
 # Running StackImages
 
 StackImages is a Python script and graphical interface for astrophotography image integration.
 
+Two of its tools also run in your browser, with nothing to install:
 
+- [Show Clusters](https://princetonuniversity.github.io/StackImages/ShowClusters/): Gaia star fields and HR diagrams.
+- [HR Diagram of Your Own Image](https://princetonuniversity.github.io/StackImages/HRDiagram/): HR and color diagrams from your own FITS image.
 
 ## macOS
 
-### Update the Software
+### Installation
 
-If you are instructed to update the software after installation, do so by running the following command, which will overwrite the StackImages files with the latest versions posted to the server.
+Paste each command into the Terminal app.[^term]
+
+1. Download and extract StackImages.
+   ```
+   curl -L https://vanderbei.princeton.edu/tmp/PyWin.tar -o $HOME/Downloads/StackImages.tar && mkdir -p $HOME/Downloads/StackImages && tar -xvf $HOME/Downloads/StackImages.tar --directory=$HOME/Downloads/StackImages --strip-components=1 PyWin
+   ```
+2. Download and install Miniconda.
+   ```
+   curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-`arch`.sh -o ~/Downloads/miniconda.sh
+   chmod +x ~/Downloads/miniconda.sh ; ~/Downloads/miniconda.sh -bu
+   ```
+3. Initialize conda, then quit and reopen Terminal.
+   ```
+   ~/miniconda3/bin/conda init bash ; ~/miniconda3/bin/conda init zsh
+   ```
+4. Accept the Terms of Service, set the channels (astropy, then apple, then conda-forge) and create the `BobsAstro` environment.
+   ```
+   conda tos accept
+   conda config --add channels conda-forge --add channels apple --add channels astropy
+   conda create -n BobsAstro astropy astroquery scipy==1.11.2 matplotlib wxpython opencv pyqt qt=5 imageio -y
+   ```
+
+### Running
+
+Open Terminal, then run GetFit (downloads FITS images) or StackImages.
+
+```
+conda activate BobsAstro
+pythonw $HOME/Downloads/StackImages/GetFit.py
+pythonw $HOME/Downloads/StackImages/StackImages.py
+```
+
+### Updating
+
+When told to update, run this to replace the StackImages files with the latest version on the server.
 
 ```
 curl -L https://vanderbei.princeton.edu/tmp/PyWin.tar -o $HOME/Downloads/StackImages.tar && tar -xvkf $HOME/Downloads/StackImages.tar --unlink -C $HOME/Downloads/StackImages --strip-components=1 --exclude='._*'
 ```
 
-### Installation
-
-Paste each of the following commands into the Terminal app[^term] to download StackImages and prepare your device to run it.
-
-1. Download and extract StackImages.
-	```
-    curl -L https://vanderbei.princeton.edu/tmp/PyWin.tar -o $HOME/Downloads/StackImages.tar && if [[ ! -d $HOME/Downloads/StackImages ]]; then mkdir -p $HOME/Downloads/StackImages ; fi && tar -xvf $HOME/Downloads/StackImages.tar --directory=$HOME/Downloads/StackImages --strip-components=1 PyWin
-	```
-2. Download Miniconda.
-    ```
-    curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-`arch`.sh -o ~/Downloads/miniconda.sh
-    ```
-3. Install Miniconda.
-    ```
-    chmod +x ~/Downloads/miniconda.sh ; ~/Downloads/miniconda.sh -bu
-    ```
-4. Initialize Miniconda, then close and re-open the Terminal app.
-    ```
-    ~/miniconda3/bin/conda init bash ; ~/miniconda3/bin/conda init zsh
-    ```
-5. Accept the Terms of Service (TOS).
-   ```
-   conda tos accept
-   ```
-6. Configure the conda command to prioritize the Astropy channel first, the Apple channel second, and the Conda Forge channel third.
-    ```
-    conda config --add channels conda-forge --add channels apple --add channels astropy
-    ```
-7. Create a conda environment named `BobsAstro`.
-    ```
-    conda create -n BobsAstro astropy astroquery scipy==1.11.2 matplotlib wxpython opencv pyqt qt=5 imageio -y
-    ```
-
-In order to use StackImages with astro images, use the included GetFit python program to download them.
-
-1. Activate the `BobsAstro` environment.
-   ```
-   conda activate BobsAstro
-   ```
-2. Run the GetFit program and utilize it as instructed.
-   ```
-   pythonw $HOME/Downloads/StackImages/GetFit.py
-   ```
-
-Each time you wish to work with and run StackImages, open the Terminal and then run the following commands.
-
-1. Activate the `BobsAstro` environment.
-    ```
-    conda activate BobsAstro
-    ```
-2. Run StackImages.
-    ```
-    pythonw $HOME/Downloads/StackImages/StackImages.py
-    ```
-
-
 ## Windows
 
-### Update the Software
-
-If you are instructed to update the software after installation, do so by running the following command, which will overwrite the StackImages files with the latest versions posted to the server.
-
-```
-curl -L https://vanderbei.princeton.edu/tmp/PyWin.tar -o %USERPROFILE%/Downloads/StackImages.tar
-tar -xvkf %USERPROFILE%/Downloads/StackImages.tar --unlink -C %USERPROFILE%/Downloads/StackImages --strip-components=1 --exclude='._*'
-```
-
 ### Installation
 
-1. [Download and install Miniconda](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe).
-2. Open the Anaconda Prompt (Miniconda3) by finding it within the Windows (logo) Menu or by searching for it by name.
-3. Download and extract StackImages.
+1. [Download and install Miniconda](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe), then open **Anaconda Prompt (Miniconda3)** from the Start menu. Paste each command below into it.
+2. Download and extract StackImages.
    ```
    curl --noproxy "*" https://vanderbei.princeton.edu/tmp/PyWin.tar -o %USERPROFILE%\Downloads\StackImages.tar && IF NOT EXIST %USERPROFILE%\Downloads\StackImages mkdir %USERPROFILE%\Downloads\StackImages && tar -xvf %USERPROFILE%\Downloads\StackImages.tar --directory=%USERPROFILE%\Downloads\StackImages --strip-components=1 PyWin
    ```
-5. Configure the conda command to prioritize the Astropy channel first, then the Conda Forge channel.
-    ```
-    conda config --add channels conda-forge --add channels astropy
-    ```
-6. Accept the Terms of Service (TOS).
+3. Accept the Terms of Service, set the channels (astropy, then conda-forge) and create the `BobsAstro` environment. OpenCV comes from pip, because conda's `opencv` fails to import on Windows.
    ```
    conda tos accept
-   ```
-7. Create a conda environment named `BobsAstro`.
-    ```
-    conda create -n BobsAstro astropy astroquery scipy==1.11.2 numpy scipy opencv matplotlib wxpython pyqt qt=5 imageio -y
-
-    ```
-8. Activate the `BobsAstro` conda environment.
-   ```
+   conda config --add channels conda-forge --add channels astropy
+   conda create -n BobsAstro astropy astroquery scipy==1.11.2 matplotlib wxpython pyqt qt=5 imageio -y
    conda activate BobsAstro
-   ```
-9. Close the Anaconda Prompt.[^cv2issue]
-
-In order to use StackImages with astro images, use the included GetFit python program to download them.
-
-1. Activate the `BobsAstro` environment.
-   ```
-   conda activate BobsAstro
-   ```
-2. Run the GetFit program and utilize it as instructed.
-   ```
-   pythonw %USERPROFILE%\Downloads\StackImages\GetFit.py
+   pip install opencv-contrib-python
    ```
 
-Each time you wish to work with and run StackImages, open the Anaconda Prompt (Miniconda3) app and then run the following commands.
+### Running
 
-1. Activate the `BobsAstro` conda environment.
-    ```
-    conda activate BobsAstro
-    ```
-2. Run StackImages.
-    ```
-    pythonw %USERPROFILE%\Downloads\StackImages\StackImages.py
-    ```
+Open Anaconda Prompt (Miniconda3), then run GetFit (downloads FITS images) or StackImages.
 
-## Remove the Conda Environment
+```
+conda activate BobsAstro
+pythonw %USERPROFILE%\Downloads\StackImages\GetFit.py
+pythonw %USERPROFILE%\Downloads\StackImages\StackImages.py
+```
 
-Remove the conda environment and optionally recreate the it for any reason (starting from Step 7).
-   ```
-   conda env remove -n BobsAstro
-   ```
+### Updating
 
-[^term]: You can find the Terminal app inside the Utilities folder found within the Applications folder, or search for "Terminal".
-[^cv2issue]: On Windows as of this writing, there is an unidentified issue with the `opencv` package.  It may be installed via `conda` but then fail on import with an ImportError, indicating a DLL is not found.  The cause of this issue remains unresolved; there may be some remedy installing `opencv` via `pip`.
+When told to update, run this to replace the StackImages files with the latest version on the server.
+
+```
+curl --noproxy "*" https://vanderbei.princeton.edu/tmp/PyWin.tar -o %USERPROFILE%\Downloads\StackImages.tar && tar -xvkf %USERPROFILE%\Downloads\StackImages.tar --unlink -C %USERPROFILE%\Downloads\StackImages --strip-components=1 --exclude=._*
+```
+
+## Start Over
+
+To remove the environment, run the command below, then recreate it with the `conda create` step above.
+
+```
+conda env remove -n BobsAstro
+```
+
+[^term]: Terminal is in Applications → Utilities, or search for "Terminal".
